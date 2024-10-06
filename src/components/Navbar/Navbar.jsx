@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex justify-between items-center md:px-12 px-4">
+    <nav className="flex justify-between items-center md:px-16 px-4">
       <img src={logo} alt="logo" className="w-36 h-4 md:w-64 md:h-9 object-contain" />
       <ul className="flex items-center justify-center gap-12 text-white hidden md:flex">
         <li className="hover:text-orange transition-all duration-300 cursor-pointer">
