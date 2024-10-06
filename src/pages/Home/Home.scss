@@ -5,6 +5,7 @@
 }
 body {
   background: linear-gradient(268deg, #000 1.93%, #1b1b1b 100.68%);
+  width: 100%;
 }
 
 #hero {
@@ -49,7 +50,6 @@ body {
 }
 #partnerships {
   width: 100%;
-  overflow: hidden;
   .left-container {
     width: 16vw;
   }
@@ -122,7 +122,7 @@ body {
 .line-v-1 {
   position: absolute;
   top: 0;
-  left: 16vw;
+  left: 16%;
   width: 1px;
   height: 100%;
   z-index: 0;
@@ -131,7 +131,7 @@ body {
 .line-v-2 {
   position: absolute;
   top: 0;
-  left: 50vw;
+  left: 50%;
   width: 1px;
   height: 100%;
   background: #353539;
@@ -140,7 +140,7 @@ body {
 .line-v-3 {
   position: absolute;
   top: 0;
-  left: 84vw;
+  left: 84%;
   width: 1px;
   height: 100%;
   background: #353539;
