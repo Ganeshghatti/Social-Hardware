@@ -35,7 +35,7 @@ export default function Navbar() {
       </ul>
       <ButtonComponentv1
         text={"Contact"}
-        link={"#Contact"}
+        link={"#contact"}
         styles={"hidden md:flex"}
       />
       <div className="md:hidden">
@@ -78,7 +78,7 @@ export default function Navbar() {
               </ul>
               <ButtonComponentv1
                 text={"Contact"}
-                link={"#Contact"}
+                link={"#contact"}
                 styles={"md:hidden flex"}
               />
             </div>

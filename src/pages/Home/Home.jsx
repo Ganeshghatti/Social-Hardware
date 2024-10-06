@@ -7,6 +7,7 @@ import Partnerships from "./components/Partnerships";
 import FAQs from "./components/FAQs";
 import SectionIndicator from "../../components/SectionIndicator";
 import Functionalities from "./components/Functionalities";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       <Functionalities />
       <BlockComponent />
       <FAQs />
+      <BlockComponent />
+      <Contact />
       <SectionIndicator />
     </>
   );

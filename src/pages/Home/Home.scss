@@ -164,13 +164,34 @@ body {
       width: 100%;
     }
     .text {
-      color: #D6D6D6;
+      color: #d6d6d6;
       font-family: "Space Grotesk";
       font-size: 24px;
       font-style: normal;
       font-weight: 400;
       line-height: 120%; /* 28.8px */
     }
+  }
+}
+#contact {
+  width: 100%;
+  .left-container {
+    width: 16%;
+  }
+  .center-container {
+    width: 68%;
+    padding: 0 65px; // Added left padding
+    .title {
+      color: var(--Schemes-On-Primary, #fff);
+      font-family: "Space Grotesk";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .right-container {
+    width: 16%;
   }
 }
 .line-v-1 {
