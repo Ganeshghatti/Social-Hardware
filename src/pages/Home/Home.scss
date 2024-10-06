@@ -70,3 +70,31 @@ body {
     background: #353539;
   }
 }
+#BlockComponent {
+  border-top: 1px solid #353539;
+  border-bottom: 1px solid #353539;
+  .line-v-1 {
+    position: absolute;
+    top: 0;
+    left: 18vw;
+    width: 1px;
+    height: 100%;
+    background: #353539;
+  }
+  .line-v-2 {
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    width: 1px;
+    height: 100%;
+    background: #353539;
+  }
+  .line-v-3 {
+    position: absolute;
+    top: 0;
+    left: 82vw;
+    width: 1px;
+    height: 100%;
+    background: #353539;
+  }
+}
