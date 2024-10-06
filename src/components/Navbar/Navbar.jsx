@@ -13,29 +13,39 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false); // Close mobile menu after clicking
+    }
+  };
+
+  const navItems = [
+    { name: "Home", id: "hero" },
+    { name: "Technology", id: "technology" },
+    { name: "Features", id: "features" },
+    { name: "FAQ", id: "faq" },
+    { name: "Partnerships", id: "partnerships" },
+  ];
+
   return (
     <nav className="flex justify-between items-center md:px-16 px-4">
       <img src={logo} alt="logo" className="w-36 h-4 md:w-64 md:h-9 object-contain" />
       <ul className="flex items-center justify-center gap-12 text-white hidden md:flex">
-        <li className="hover:text-orange transition-all duration-300 cursor-pointer">
-          Home
-        </li>
-        <li className="hover:text-orange transition-all duration-300 cursor-pointer">
-          Technology
-        </li>
-        <li className="hover:text-orange transition-all duration-300 cursor-pointer">
-          Features
-        </li>
-        <li className="hover:text-orange transition-all duration-300 cursor-pointer">
-          FAQ
-        </li>
-        <li className="hover:text-orange transition-all duration-300 cursor-pointer">
-          Partnerships
-        </li>
+        {navItems.map((item) => (
+          <li
+            key={item.id}
+            className="hover:text-orange transition-all duration-300 cursor-pointer"
+            onClick={() => scrollToSection(item.id)}
+          >
+            {item.name}
+          </li>
+        ))}
       </ul>
       <ButtonComponentv1
         text={"Contact"}
-        link={"#contact"}
+        link={"contact"}
         styles={"hidden md:flex"}
       />
       <div className="md:hidden">
@@ -55,30 +65,24 @@ export default function Navbar() {
         {isOpen && (
           <>
             <div
-              className="menu-gradient absolute top-0 right-0 w-screen  h-screen z-1"
+              className="menu-gradient absolute top-0 right-0 w-screen h-screen z-1"
               onClick={toggleMenu}
             ></div>
             <div className="absolute top-0 right-0 w-[80vw] h-screen flex flex-col z-10 items-center justify-center gap-32 bg-black">
               <ul className="flex flex-col items-center justify-center gap-10">
-                <li className="text-white hover:text-orange transition-all duration-300 cursor-pointer">
-                  Home
-                </li>
-                <li className="text-white hover:text-orange transition-all duration-300 cursor-pointer">
-                  Technology
-                </li>
-                <li className="text-white hover:text-orange transition-all duration-300 cursor-pointer">
-                  Features
-                </li>
-                <li className="text-white hover:text-orange transition-all duration-300 cursor-pointer">
-                  FAQ
-                </li>
-                <li className="text-white hover:text-orange transition-all duration-300 cursor-pointer">
-                  Partnerships
-                </li>
+                {navItems.map((item) => (
+                  <li
+                    key={item.id}
+                    className="text-white hover:text-orange transition-all duration-300 cursor-pointer"
+                    onClick={() => scrollToSection(item.id)}
+                  >
+                    {item.name}
+                  </li>
+                ))}
               </ul>
               <ButtonComponentv1
                 text={"Contact"}
-                link={"#contact"}
+                link={"contact"}
                 styles={"md:hidden flex"}
               />
             </div>
