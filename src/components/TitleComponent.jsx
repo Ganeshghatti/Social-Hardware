@@ -23,7 +23,7 @@ export default function TitleComponent({ title, styles }) {
           fill="#ABABAB"
         />
       </svg>
-      <p className="text-2xl font-medium text-[#D6D6D6] absolute inset-0 flex items-center justify-center">
+      <p className="text-2xl font-medium font-['VioletSans'] text-[#D6D6D6] absolute inset-0 flex items-center justify-center">
         {title}
       </p>
     </div>

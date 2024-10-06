@@ -7,7 +7,7 @@ export default {
         'orange': '#FC8500',
       },
       fontFamily: {
-        'violet-sans': ['VioletSans', 'sans-serif'],
+        'violetSans': ['VioletSans', 'sans-serif'],
       },
     },
   },

@@ -51,10 +51,10 @@ body {
 #partnerships {
   width: 100%;
   .left-container {
-    width: 16vw;
+    width: 16%;
   }
   .center-container {
-    width: 68vw;
+    width: 68%;
     .title {
       color: #d6d6d6;
       font-family: VioletSans;
@@ -116,7 +116,44 @@ body {
     }
   }
   .right-container {
-    width: 16vw;
+    width: 16%;
+  }
+}
+
+#faq {
+  width: 100%;
+  .left-container {
+    width: 16%;
+  }
+  .center-container {
+    width: 68%;
+    .center-container-right-block {
+      border-left: 1px solid #353539; // Added this line
+    }
+    .QnA-block {
+      border-top: 1px solid #353539; // Added this line
+      padding: 50px 40px; // Added left padding
+      .question {
+        color: #d6d6d6;
+        font-family: VioletSans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 108.18%; /* 21.636px */
+        cursor: pointer;
+      }
+      .answer {
+        color: #d6d6d6;
+        font-family: VioletSans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 108.18%; /* 21.636px */
+      }
+    }
+  }
+  .right-container {
+    width: 16%;
   }
 }
 .line-v-1 {

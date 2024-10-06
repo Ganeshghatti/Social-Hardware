@@ -57,7 +57,7 @@ export default function Partnerships() {
           <ButtonComponentv2 text="Join Now" link="contact" styles="w-fit" />
         </div>
       </div>
-      <div className="right-container">drg</div>
+      <div className="right-container"/>
       <div className="line-v-1" />
       <div className="line-v-3" />
     </section>

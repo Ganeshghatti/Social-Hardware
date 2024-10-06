@@ -4,16 +4,20 @@ import "./Home.scss";
 import BlockComponent from "./components/BlockComponent";
 import Features from "./components/Features";
 import Partnerships from "./components/Partnerships";
+import FAQs from "./components/FAQs";
+import SectionIndicator from "../../components/SectionIndicator";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <BlockComponent />
       <Features />
       <BlockComponent />
       <Partnerships />
       <BlockComponent />
+      <FAQs /> 
+      <BlockComponent />
+      <SectionIndicator/>
     </>
   );
 }
