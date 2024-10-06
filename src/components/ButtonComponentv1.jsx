@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ButtonComponent({ text, link, styles }) {
+export default function ButtonComponentv1({ text, link, styles }) {
   const handleClick = (e) => {
     e.preventDefault();
     const element = document.getElementById(link);

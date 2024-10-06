@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../../public/assets/images/logo.png";
 import "./Navbar.scss";
-import ButtonComponent from "../ButtonComponent";
+import ButtonComponentv1 from "../ButtonComponentv1";
 import { TfiAlignRight } from "react-icons/tfi";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
@@ -33,7 +33,7 @@ export default function Navbar() {
           Partnerships
         </li>
       </ul>
-      <ButtonComponent
+      <ButtonComponentv1
         text={"Contact"}
         link={"#Contact"}
         styles={"hidden md:flex"}
@@ -76,7 +76,7 @@ export default function Navbar() {
                   Partnerships
                 </li>
               </ul>
-              <ButtonComponent
+              <ButtonComponentv1
                 text={"Contact"}
                 link={"#Contact"}
                 styles={"md:hidden flex"}
