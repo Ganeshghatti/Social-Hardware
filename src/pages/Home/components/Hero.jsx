@@ -7,9 +7,11 @@ export default function Hero() {
       <div className="w-[60vw] z-10">
         <img src={heroimg} alt="hero" className="w-full h-auto" />
       </div>
-      <div className="w-[50vw] absolute left-[5vw] transform translate-y-[45%] content flex flex-col gap-6 z-10">
+      <div className="w-[45vw] absolute left-[5vw] transform translate-y-[45%] content flex flex-col gap-6 z-10">
         <h1 className="text-white title">
-          Pioneering Safety and Efficiency with <br />
+          Pioneering Safety
+          <br />
+          and Efficiency with <br />
           <span className="text-orange"> Next-Generation</span>
           <br /> Telerobotic Solutions
         </h1>
