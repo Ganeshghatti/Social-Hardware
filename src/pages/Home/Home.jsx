@@ -6,6 +6,7 @@ import Features from "./components/Features";
 import Partnerships from "./components/Partnerships";
 import FAQs from "./components/FAQs";
 import SectionIndicator from "../../components/SectionIndicator";
+import Functionalities from "./components/Functionalities";
 
 export default function Home() {
   return (
@@ -15,9 +16,10 @@ export default function Home() {
       <BlockComponent />
       <Partnerships />
       <BlockComponent />
-      <FAQs /> 
+      <Functionalities />
       <BlockComponent />
-      <SectionIndicator/>
+      <FAQs />
+      <SectionIndicator />
     </>
   );
 }
