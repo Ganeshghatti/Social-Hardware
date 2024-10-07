@@ -7,7 +7,7 @@ export default function Partnerships() {
     <section id="partnerships" className="relative flex">
       <div className="left-container">
         <TitleComponent
-          title="Partnerships"
+          title="Partnership"
           styles={"absolute left-[4vw] top-[2vh]"}
         />
       </div>

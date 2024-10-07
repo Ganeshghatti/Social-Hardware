@@ -53,6 +53,7 @@ export default function FAQs() {
             Can't find an answer to your question?
             <br />
             Feel free to &nbsp;
+            <br className="md:hidden"/>
             <span
               className="cursor-pointer underline"
               onClick={scrollToContact}
