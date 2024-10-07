@@ -9,15 +9,16 @@ import SectionIndicator from "../../components/SectionIndicator";
 import Functionalities from "./components/Functionalities";
 import Contact from "./components/Contact";
 import Technology from "./components/Technology";
+import Video from "./components/Video";
+import WhatsappCTA from "./components/WhatsappCTA";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <BlockComponent />
-      <Technology /> 
-      <BlockComponent />
-      <Partnerships />
+      <Video />
+      <Technology />
       <BlockComponent />
       <Features />
       <BlockComponent />
@@ -25,7 +26,11 @@ export default function Home() {
       <BlockComponent />
       <FAQs />
       <BlockComponent />
-      <Contact />
+      <Partnerships />
+      <BlockComponent />
+      <Contact /> 
+      <BlockComponent />
+      <WhatsappCTA />
       <SectionIndicator />
     </>
   );

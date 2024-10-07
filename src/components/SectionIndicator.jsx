@@ -16,7 +16,7 @@ const Dot = () => (
     height="5"
     viewBox="0 0 5 5"
     fill="none"
-    className="my-2"
+    className="my-2 mx-auto"
   >
     <circle cx="2.67969" cy="2.55078" r="2" fill="#4E4E4E" />
   </svg>
@@ -81,17 +81,18 @@ export default function SectionIndicator() {
           className="flex justify-center items-center h-8 w-24"
         >
           {currentSection === section.id ? (
-            <div className="flex items-center flex-col justify-center">
+            <div className="flex items-center flex-col justify-center m-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="9"
                 height="9"
                 viewBox="0 0 9 9"
                 fill="none"
+                className="ml-0.5"
               >
                 <circle cx="4.3125" cy="4.16406" r="4" fill="#E7A349" />
               </svg>
-              <span className="text-white text-sm font-['VioletSans']">
+              <span className="text-white text-sm font-['VioletSans'] fancy-text-border m-auto">
                 {section.name}
               </span>
             </div>

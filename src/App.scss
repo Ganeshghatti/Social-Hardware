@@ -1,0 +1,40 @@
+
+.line-v-1 {
+    position: absolute;
+    top: 0;
+    left: 16%;
+    width: 1px;
+    height: 100%;
+    z-index: 0;
+    background: #353539;
+  }
+  .line-v-2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background: #353539;
+    z-index: 0;
+  }
+  .line-v-3 {
+    position: absolute;
+    top: 0;
+    left: 84%;
+    width: 1px;
+    height: 100%;
+    background: #353539;
+    z-index: 0;
+  }
+  .fancy-text-border {
+    --s: 10px; /* the size on the corner */
+    --t: 1px; /* the thickness of the border */
+    --g: 5px; /* the gap between the border and image */
+  
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid #fc8500; /* the color here */
+    outline-offset: calc(-1 * var(--t));
+    mask: conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0 /
+        calc(100% - var(--s)) calc(100% - var(--s)),
+      linear-gradient(#000 0 0) content-box;
+  }

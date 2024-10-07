@@ -97,7 +97,7 @@ export default function Technology() {
             <boxGeometry args={[5, 1, 1]} />
             <meshStandardMaterial color="white" />
           </mesh> */}
-          <OrbitControls />
+          <OrbitControls enableZoom={false} enablePan={false} />
           <ambientLight intensity={3} />
           <pointLight position={[10, 10, 10]} intensity={1} />
         </Canvas>

@@ -45,7 +45,7 @@ export default function Features() {
               key={index}
             >
               <div className="card-left w-1/4 flex flex-col gap-4 absolute left-0">
-                <p className="index">{card.index}</p>
+                <p className="index w-fit">{card.index}</p>
                 <p className="title">{card.title}</p>
                 <p className="description">{card.description}</p>
               </div>
@@ -58,7 +58,7 @@ export default function Features() {
                     </p>
                   ))}
                 </div>
-                <div className="flex gap-2 right-0 get-a-trial absolute justify-end bottom-0  w-1/2">
+                <div className="flex gap-4 right-0 get-a-trial absolute justify-end bottom-0  w-1/2">
                   GET A TRIAL
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

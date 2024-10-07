@@ -51,6 +51,22 @@ body {
   border-top: 1px solid #353539;
   border-bottom: 1px solid #353539;
 }
+#video {
+  border-bottom: 1px solid #353539;
+  .video-mp4 {
+    --s: 125px; /* the size on the corner */
+    --t: 5px; /* the thickness of the border */
+    --g: 20px; /* the gap between the border and image */
+
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid #fc8500; /* the color here */
+    outline-offset: calc(-1 * var(--t));
+    mask: conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0 /
+        calc(100% - var(--s)) calc(100% - var(--s)),
+      linear-gradient(#000 0 0) content-box;
+    transition: 0.4s;
+  }
+}
 #technology {
   .carousel {
     .text {
@@ -89,6 +105,17 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+
+        --s: 5px; /* the size on the corner */
+        --t: 1px; /* the thickness of the border */
+        --g: 5px; /* the gap between the border and image */
+
+        padding: calc(var(--g) + var(--t));
+        outline: var(--t) solid #fc8500; /* the color here */
+        outline-offset: calc(-1 * var(--t));
+        mask: conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0 /
+            calc(100% - var(--s)) calc(100% - var(--s)),
+          linear-gradient(#000 0 0) content-box;
       }
       .title {
         color: #d6d6d6;
@@ -115,11 +142,11 @@ body {
         color: #d6d6d6;
         text-align: right;
         font-family: "Space Grotesk";
-        font-size: 14px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 500;
         line-height: 120%; /* 16.8px */
-        padding: 20px;
+        padding: 20px 25px;
       }
       .param {
         border-bottom: 1px solid #353539;
@@ -279,30 +306,13 @@ body {
     width: 16%;
   }
 }
-.line-v-1 {
-  position: absolute;
-  top: 0;
-  left: 16%;
-  width: 1px;
-  height: 100%;
-  z-index: 0;
-  background: #353539;
-}
-.line-v-2 {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 1px;
-  height: 100%;
-  background: #353539;
-  z-index: 0;
-}
-.line-v-3 {
-  position: absolute;
-  top: 0;
-  left: 84%;
-  width: 1px;
-  height: 100%;
-  background: #353539;
-  z-index: 0;
+#whatsappCTA {
+  .left {
+    color: #d6d6d6;
+    font-family: VioletSans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108.18%; /* 34.618px */
+  }
 }
