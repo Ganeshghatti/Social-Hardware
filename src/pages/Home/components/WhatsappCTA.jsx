@@ -1,5 +1,5 @@
 import React from "react";
-import WhatsappCTAimg from "../../../public/assets/images/WhatsappCTA.png";
+import WhatsappCTAimg from "../../../../public/assets/images/WhatsappCTA.png";
 
 export default function WhatsappCTA() {
   return (
