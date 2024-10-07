@@ -12,11 +12,11 @@ export default function Hero() {
       </div>
       <div className="w-full text-center md:text-left md:w-[42%] relative md:absolute md:left-[4%] md:transform md:translate-y-[45%] content flex flex-col gap-6 z-10">
         <h1 className="text-white title">
-          Pioneering Safety
-          <br />
-          and Efficiency with <br />
+          Pioneering Safety &nbsp;
+          <br className="hidden md:block"/> 
+          and Efficiency with <br className="hidden md:block"/>
           <span className="text-orange"> Next-Generation</span>
-          <br /> Telerobotic Solutions
+          <br className="hidden md:block"/> Telerobotic Solutions
         </h1>
         <p className="desc hidden md:block">
           Eclipse Remote Systems are designed for extreme environments,

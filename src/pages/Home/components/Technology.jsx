@@ -38,7 +38,7 @@ export default function Technology() {
         title="Technology"
         styles={"absolute left-[4vw] top-[2vh]"}
       />
-      <div className="carousel-container pt-16 md:pt-32 z-10 ml-0 md:ml-[4%] w-11/12 md:w-[20%]">
+      <div className="carousel-container pt-10 md:pt-32 z-10 ml-0 md:ml-[4%] w-11/12 md:w-[20%]">
         <div className="carousel">
           {carouselData.map((item, index) => (
             <p

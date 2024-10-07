@@ -97,9 +97,6 @@ body {
     width: 100%;
   }
   .card {
-    position: relative;
-    width: 80%;
-    margin-left: 4%;
     .card-left {
       .index {
         color: var(--Schemes-On-Primary, #fff);
@@ -127,6 +124,9 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: 120%; /* 28.8px */
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
       }
       .description {
         color: var(--Schemes-On-Primary, #fff);
@@ -135,11 +135,12 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: 108.18%; /* 15.145px */
+        @media (max-width: 768px) {
+          font-size: 11px;
+        }
       }
     }
     .card-right {
-      width: 85%;
-      height: 100%;
       .param,
       .get-a-trial {
         color: #d6d6d6;
@@ -150,12 +151,22 @@ body {
         font-weight: 500;
         line-height: 120%; /* 16.8px */
         padding: 20px 25px;
+        @media (max-width: 768px) {
+          font-size: 11px;
+          padding: 8px 10px;
+        }
       }
-      .param {
-        border-bottom: 1px solid #353539;
+      @media (max-width: 768px) {
+        .param {
+          width: 50%;
+          align-self: flex-end;
+        }
       }
       .param:first-child {
         border-top: 1px solid #353539;
+      }
+      .param {
+        border-bottom: 1px solid #353539;
       }
       .get-a-trial {
         border-top: 1px solid #353539;
@@ -275,6 +286,10 @@ body {
   width: 100%;
   .card {
     width: 50%;
+    @media (max-width: 768px) {
+      width: 96%;
+      margin: auto;
+    }
     .img {
       width: 100%;
     }
@@ -285,6 +300,9 @@ body {
       font-style: normal;
       font-weight: 400;
       line-height: 120%; /* 28.8px */
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
     }
   }
 }

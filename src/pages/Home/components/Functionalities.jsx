@@ -49,16 +49,16 @@ export default function Functionalities() {
     return () => clearInterval(timer);
   }, [currentIndex]);
 
-  const nextIndex = currentIndex + 1;
+  const nextIndex = (currentIndex + 1) % cardsData.length;
   const isFirstSlide = currentIndex === 0;
-  const isLastSlide = currentIndex === cardsData.length - 2;
+  const isLastSlide = currentIndex === cardsData.length - 1;
 
   return (
     <section
       id="functionalities"
-      className="relative flex flex-col gap-16 py-8"
+      className="relative flex flex-col gap-8 md:gap-16 py-4 md:py-8"
     >
-      <div className="carousel z-10 px-[4%] flex items-center gap-8">
+      <div className="carousel z-10 px-0 md:px-[4%] flex items-center gap-4 md:gap-8">
         <div className="card flex flex-col gap-6 transition-all duration-750 opacity-100">
           <img
             src={cardsData[currentIndex].image}
@@ -69,7 +69,7 @@ export default function Functionalities() {
             {cardsData[currentIndex].text}
           </p>
         </div>
-        <div className="card flex flex-col gap-6 transition-all duration-750 opacity-50">
+        <div className="card flex-col gap-6 transition-all duration-750 opacity-50 hidden md:flex">
           <img
             src={cardsData[nextIndex].image}
             alt={cardsData[nextIndex].text}

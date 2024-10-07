@@ -37,28 +37,32 @@ export default function Features() {
         title="Features"
         styles={"absolute left-[4vw] h-fit top-[2vh]"}
       />
-      <div className="cards-parent-container flex flex-col w-full mt-32">
+      <div className="cards-parent-container flex flex-col w-full mt-16 md:mt-32">
         {cardData.map((card, index) => (
           <div className="cards-container">
             <div
-              className="card z-10 flex justify-end items-center"
+              className="card w-full md:w-[80%] ml-0 md:ml-[4%] relative z-10 flex flex-col md:flex-row justify-end items-center pt-6 md:pt-0"
               key={index}
             >
-              <div className="card-left w-1/4 flex flex-col gap-4 absolute left-0">
+              <div className="card-left w-11/12 md:w-1/4 flex flex-col gap-4 md:absolute left-0">
                 <p className="index w-fit">{card.index}</p>
                 <p className="title">{card.title}</p>
                 <p className="description">{card.description}</p>
               </div>
-              <div className="card-right flex relative justify-center">
-                <img src={card.image} alt={card.title} className="w-1/2 z-10" />
-                <div className="params-container absolute right-0 top-1/2 -translate-y-1/2 flex flex-col h-full justify-center w-1/2">
+              <div className="card-right w-full md:w-[85%] flex flex-col md:flex-row items-center relative justify-center mt-6 md:mt-0">
+                <div className="params-container md:absolute right-0 top-0 md:top-1/2 md:-translate-y-1/2 flex flex-col h-full justify-start md:justify-center w-[68%] md:w-1/2">
                   {card.params.map((param, index) => (
                     <p key={index} className="param">
                       {param}
                     </p>
                   ))}
-                </div>
-                <div className="flex gap-4 right-0 get-a-trial absolute justify-end bottom-0  w-1/2">
+                </div>{" "}
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="w-[68%] md:w-1/2 z-10"
+                />
+                <div className="flex gap-4 right-0 get-a-trial block md:absolute justify-center md:justify-end bottom-0 w-[68%] md:w-1/2 cursor-pointer">
                   GET A TRIAL
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
