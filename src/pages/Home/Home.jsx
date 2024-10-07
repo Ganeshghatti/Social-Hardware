@@ -8,15 +8,18 @@ import FAQs from "./components/FAQs";
 import SectionIndicator from "../../components/SectionIndicator";
 import Functionalities from "./components/Functionalities";
 import Contact from "./components/Contact";
+import Technology from "./components/Technology";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <BlockComponent />
+      <Technology /> 
+      <BlockComponent />
       <Partnerships />
       <BlockComponent />
-      <Features /> 
+      <Features />
       <BlockComponent />
       <Functionalities />
       <BlockComponent />

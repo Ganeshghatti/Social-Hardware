@@ -6,8 +6,11 @@
 body {
   background: linear-gradient(268deg, #000 1.93%, #1b1b1b 100.68%);
   width: 100%;
+  overflow-x: hidden;
 }
-
+#root {
+  background: linear-gradient(268deg, #000 1.93%, #1b1b1b 100.68%);
+}
 #hero {
   background: linear-gradient(268deg, #000 1.93%, #1b1b1b 100.68%);
   .content {
@@ -47,6 +50,27 @@ body {
 #BlockComponent {
   border-top: 1px solid #353539;
   border-bottom: 1px solid #353539;
+}
+#technology {
+  .carousel {
+    .text {
+      color: #d6d6d6;
+      font-family: VioletSans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 28.8px */
+    }
+  }
+  .left-container {
+    width: 16%;
+  }
+  .threeD-container {
+    width: 68%;
+  }
+  .right-container {
+    width: 16%;
+  }
 }
 #features {
   .cards-container {
@@ -100,12 +124,11 @@ body {
       .param {
         border-bottom: 1px solid #353539;
       }
-      .param:first-child{
+      .param:first-child {
         border-top: 1px solid #353539;
       }
-      .get-a-trial{
+      .get-a-trial {
         border-top: 1px solid #353539;
-
       }
     }
   }
