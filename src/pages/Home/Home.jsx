@@ -13,9 +13,10 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Features />
       <BlockComponent />
       <Partnerships />
+      <BlockComponent />
+      <Features /> 
       <BlockComponent />
       <Functionalities />
       <BlockComponent />

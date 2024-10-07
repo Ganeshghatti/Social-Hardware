@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TitleComponent({ title, styles }) {
   return (
-    <div className={`relative w-fit ${styles}`}>
+    <div className={`w-fit ${styles}`}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="227"

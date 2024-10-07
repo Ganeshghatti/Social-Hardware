@@ -16,11 +16,10 @@ export default function Hero() {
           <br /> Telerobotic Solutions
         </h1>
         <p className="desc">
-          The Eclipse Series telerobots are purpose-built to tackle the toughest
-          challenges in environments too dangerous for human presence.
-          Engineered with precision, these advanced systems excel in high-risk
-          tasks like bomb disposal, search and rescue, and hazardous industrial
-          operations—ensuring safety where it matters most.
+          Eclipse Remote Systems are designed for extreme environments,
+          utilizing advanced telerobotics to guarantee maximum safety and
+          efficiency. Empower your high-risk operations with our superior
+          capabilities.
         </p>
       </div>
       <div className="line-v-1" />

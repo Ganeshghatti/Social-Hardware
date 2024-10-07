@@ -48,6 +48,68 @@ body {
   border-top: 1px solid #353539;
   border-bottom: 1px solid #353539;
 }
+#features {
+  .cards-container {
+    border-bottom: 1px solid #353539;
+    width: 100%;
+  }
+  .card {
+    position: relative;
+    width: 80%;
+    margin-left: 4%;
+    .card-left {
+      .index {
+        color: var(--Schemes-On-Primary, #fff);
+        font-family: VioletSans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .title {
+        color: #d6d6d6;
+        font-family: VioletSans;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 28.8px */
+      }
+      .description {
+        color: var(--Schemes-On-Primary, #fff);
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 108.18%; /* 15.145px */
+      }
+    }
+    .card-right {
+      width: 85%;
+      height: 100%;
+      .param,
+      .get-a-trial {
+        color: #d6d6d6;
+        text-align: right;
+        font-family: "Space Grotesk";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 16.8px */
+        padding: 20px;
+      }
+      .param {
+        border-bottom: 1px solid #353539;
+      }
+      .param:first-child{
+        border-top: 1px solid #353539;
+      }
+      .get-a-trial{
+        border-top: 1px solid #353539;
+
+      }
+    }
+  }
+}
 #partnerships {
   width: 100%;
   .left-container {
