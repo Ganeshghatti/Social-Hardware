@@ -20,4 +20,12 @@ nav ul li {
 .menu-gradient {
   background-color: #000;
   opacity: 0.5;
+  z-index: 998 !important;
 }
+.navbar-menu {
+  z-index: 999 !important;
+}
+.cancel-icon {
+  z-index: 999 !important;
+}
+

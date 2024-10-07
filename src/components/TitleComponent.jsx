@@ -9,6 +9,7 @@ export default function TitleComponent({ title, styles }) {
         height="72"
         viewBox="0 0 227 72"
         fill="none"
+        className="hidden md:block"
       >
         <path
           d="M190.108 1H5.00001C2.79087 1 1 2.79086 1 5V49.37C1 50.6455 1.60823 51.8444 2.6374 52.5978L19.6717 65.0664"
@@ -23,7 +24,30 @@ export default function TitleComponent({ title, styles }) {
           fill="#ABABAB"
         />
       </svg>
-      <p className="text-2xl font-medium font-['VioletSans'] text-[#D6D6D6] absolute inset-0 flex items-center justify-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="92"
+        height="29"
+        viewBox="0 0 92 29"
+        fill="none"
+        className="md:hidden"
+      >
+        <path
+          d="M76.6473 1H2.33212C1.59641 1 1 1.59641 1 2.33212V19.7499C1 20.1828 1.21032 20.5887 1.56396 20.8383L8.46909 25.712"
+          stroke="#E7A349"
+          stroke-width="0.333031"
+        />
+        <path
+          d="M90.9992 20.5859L84.9076 27.5454C84.6547 27.8344 84.2893 28.0001 83.9053 28.0001L48.1641 28.0001"
+          stroke="#E7A349"
+          stroke-width="0.333031"
+        />
+        <path
+          d="M87.3376 17.7715C87.3376 18.262 87.7353 18.6596 88.2257 18.6596C88.7162 18.6596 89.1138 18.262 89.1138 17.7715C89.1138 17.281 88.7162 16.8834 88.2257 16.8834C87.7353 16.8834 87.3376 17.281 87.3376 17.7715ZM82.1342 24.7309L82.2595 24.8406L82.1342 24.7309ZM88.1004 17.6618L82.0089 24.6213L82.2595 24.8406L88.351 17.8812L88.1004 17.6618ZM81.1318 25.0192L45.3906 25.0192L45.3906 25.3522L81.1318 25.3522L81.1318 25.0192ZM82.0089 24.6213C81.7876 24.8741 81.4679 25.0192 81.1318 25.0192L81.1318 25.3522C81.5639 25.3522 81.9749 25.1657 82.2595 24.8406L82.0089 24.6213Z"
+          fill="#ABABAB"
+        />
+      </svg>
+      <p className="text-md md:text-2xl font-medium font-['VioletSans'] text-[#D6D6D6] absolute inset-0 flex items-center justify-center">
         {title}
       </p>
     </div>

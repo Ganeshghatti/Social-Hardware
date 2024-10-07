@@ -68,7 +68,7 @@ export default function Navbar() {
               className="menu-gradient absolute top-0 right-0 w-screen h-screen z-1"
               onClick={toggleMenu}
             ></div>
-            <div className="absolute top-0 right-0 w-[80vw] h-screen flex flex-col z-10 items-center justify-center gap-32 bg-black">
+            <div className="absolute navbar-menu top-0 right-0 w-[80vw] h-screen flex flex-col z-10 items-center justify-center gap-32 bg-black">
               <ul className="flex flex-col items-center justify-center gap-10">
                 {navItems.map((item) => (
                   <li
