@@ -5,15 +5,15 @@ export default function WhatsappCTA() {
   return (
     <section
       id="whatsappCTA"
-      className="relative flex justify-center w-full py-8"
+      className="relative flex flex-col md:flex-row justify-center items-center w-full gap-6 md:gap-0 py-8"
     >
-      <div className="left px-[5%] flex-col flex justify-center items-start z-10">
+      <div className="left px-[5%] w-[68%] md:w-auto flex-col flex justify-center items-start z-10">
         No matter the environment.
         <br />
         No matter the challenge.
         <br />
         Eclipse has you covered.
-        <button className="bg-[#46C756] text-white flex gap-2 items-center font-['VioletSans'] px-4 py-2 rounded-md text-2xl mt-4">
+        <button className="bg-[#46C756] text-white flex gap-2 items-center font-['VioletSans'] px-2 md:px-4 py-1 md:py-2 rounded-md text-sm w-full md:w-auto md:text-2xl mt-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="39"
@@ -87,7 +87,7 @@ export default function WhatsappCTA() {
       <img
         src={WhatsappCTAimg}
         alt="Eclipse Remote Systems"
-        className="w-1/3 z-10"
+        className="w-[68%] md:w-1/3 z-10"
       />
       <div className="line-v-1" />
       <div className="line-v-3" />

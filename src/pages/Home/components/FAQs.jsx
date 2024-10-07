@@ -49,7 +49,7 @@ export default function FAQs() {
       <div className="center-container">
         <div className="flex items-center justify-center">
           <div className="w-1/2 pr-8 border-r border-[#353539]" />
-          <div className="w-1/2 text-xl font-medium font-['VioletSans'] text-[#A5A5A5] center-container-right-block px-6 py-14 text-right justify-end">
+          <div className="w-1/2 text-xs md:text-xl font-medium font-['VioletSans'] text-[#A5A5A5] center-container-right-block px-1 md:px-6 py-6 md:py-14 text-right justify-end">
             Can't find an answer to your question?
             <br />
             Feel free to &nbsp;
@@ -87,7 +87,7 @@ export default function FAQs() {
             <div
               className={`answer overflow-hidden transition-all duration-250 ease-in-out ${
                 openIndex === index
-                  ? "max-h-96 opacity-100 pt-10 px-4"
+                  ? "max-h-96 opacity-100 pt-4 md:pt-10 px-2 md:px-4"
                   : "max-h-0 opacity-0 pt-0"
               }`}
             >

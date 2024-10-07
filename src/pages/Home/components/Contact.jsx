@@ -19,7 +19,8 @@ export default function Contact() {
     let tempErrors = {};
     if (!formData.name) tempErrors.name = "Name is required";
     if (!validator.isEmail(formData.email)) tempErrors.email = "Invalid email";
-    if (!validator.isMobilePhone(formData.phone)) tempErrors.phone = "Invalid phone number";
+    if (!validator.isMobilePhone(formData.phone))
+      tempErrors.phone = "Invalid phone number";
     if (!formData.message) tempErrors.message = "Message is required";
     setErrors(tempErrors);
     return Object.keys(tempErrors).length === 0;
@@ -47,9 +48,12 @@ export default function Contact() {
   return (
     <section id="contact" className="relative flex py-8">
       <div className="left-container" />
-      <div className="center-container px-6 flex flex-col gap-12 items-center">
+      <div className="center-container px-0 md:px-6 flex flex-col gap-6 md:gap-12 items-center">
         <h2 className="title">CONTACT US</h2>
-        <form className="flex flex-col gap-12 w-full" onSubmit={handleSubmit}>
+        <form
+          className="flex flex-col gap-6 md:gap-12 w-full"
+          onSubmit={handleSubmit}
+        >
           <div>
             <input
               type="text"
@@ -57,9 +61,11 @@ export default function Contact() {
               value={formData.name}
               onChange={handleChange}
               placeholder="Name"
-              className="bg-transparent border-b border-[#353539] text-white placeholder-[#A7A7A7] pb-5 focus:outline-none w-full"
+              className="bg-transparent border-b border-[#353539] text-white placeholder-[#A7A7A7] pb-3 md:pb-5 focus:outline-none w-full text-[11px] md:text-base"
             />
-            {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+            {errors.name && (
+              <p className="text-red-500 text-[11px] md:text-sm mt-1">{errors.name}</p>
+            )}
           </div>
           <div>
             <input
@@ -68,9 +74,11 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email"
-              className="bg-transparent border-b border-[#353539] text-white placeholder-[#A7A7A7] pb-5 focus:outline-none w-full"
+              className="bg-transparent border-b border-[#353539] text-white placeholder-[#A7A7A7] pb-3 md:pb-5 focus:outline-none w-full text-[11px] md:text-base"
             />
-            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+            {errors.email && (
+              <p className="text-red-500 text-[11px] md:text-sm mt-1">{errors.email}</p>
+            )}
           </div>
           <div>
             <input
@@ -79,9 +87,11 @@ export default function Contact() {
               value={formData.phone}
               onChange={handleChange}
               placeholder="Phone"
-              className="bg-transparent border-b border-[#353539] text-white placeholder-[#A7A7A7] pb-5 focus:outline-none w-full"
+              className="bg-transparent border-b border-[#353539] text-white placeholder-[#A7A7A7] pb-3 md:pb-5 focus:outline-none w-full text-[11px] md:text-base"
             />
-            {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
+            {errors.phone && (
+              <p className="text-red-500 text-[11px] md:text-sm mt-1">{errors.phone}</p>
+            )}
           </div>
           <div>
             <textarea
@@ -90,9 +100,11 @@ export default function Contact() {
               onChange={handleChange}
               placeholder="Message"
               rows="4"
-              className="bg-transparent border-b border-[#353539] text-white placeholder-[#A7A7A7] pb-5 focus:outline-none resize-none w-full"
+              className="bg-transparent border-b border-[#353539] text-white placeholder-[#A7A7A7] pb-3 md:pb-5 focus:outline-none resize-none w-full text-[11px] md:text-base"
             ></textarea>
-            {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+            {errors.message && (
+              <p className="text-red-500 text-[11px] md:text-sm mt-1">{errors.message}</p>
+            )}
           </div>
           <button
             type="submit"

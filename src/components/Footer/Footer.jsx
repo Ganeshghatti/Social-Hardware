@@ -19,13 +19,13 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="px-[4%] flex justify-between items-center py-6">
+    <footer className="px-[4%] flex justify-between flex-col gap-6 md:gap-0 md:flex-row items-center py-6">
       <img src={logo} alt="Eclipse Remote Systems" className="w-48" />
-      <ul className="flex items-center justify-center gap-12 text-white hidden md:flex">
+      <ul className="flex items-center justify-center gap-4 md:gap-12 text-white">
         {navItems.map((item) => (
           <li
             key={item.id}
-            className="hover:text-orange transition-all duration-300 cursor-pointer"
+            className="hover:text-orange transition-all duration-300 cursor-pointer text-sm md:text-base"
             onClick={() => scrollToSection(item.id)}
           >
             {item.name}

@@ -189,6 +189,10 @@ body {
       font-weight: 400;
       line-height: 120%; /* 33.6px */
       padding: 50px 0; // Added left padding
+      @media (max-width: 768px) {
+        font-size: 16px;
+        padding: 50px 0 10px 0;
+      }
     }
     table {
       width: 100%;
@@ -211,6 +215,11 @@ body {
         border-right: 1px solid #353539; // Added this line
         padding: 50px 40px; // Added left padding
         text-align: left;
+        @media (max-width: 768px) {
+          font-size: 16px;
+          padding: 5px;
+          text-align: center;
+        }
       }
       .table-content {
         color: #bfbfbf;
@@ -224,6 +233,10 @@ body {
         align-items: center;
         justify-content: center;
         padding: 50px 40px; // Matched padding with table-title
+        @media (max-width: 768px) {
+          font-size: 11px;
+          padding: 5px;
+        }
       }
       tr:not(:last-child) {
         border-bottom: 1px solid #353539; // Added this line
@@ -231,6 +244,9 @@ body {
     }
     .cta {
       padding: 50px 65px;
+      @media (max-width: 768px) {
+        padding: 15px 10px;
+      }
       .cta-text {
         color: var(--Schemes-On-Primary, #fff);
         font-family: "Space Grotesk";
@@ -238,6 +254,9 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: 108.18%; /* 25.963px */
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -259,6 +278,9 @@ body {
     .QnA-block {
       border-top: 1px solid #353539; // Added this line
       padding: 50px 40px; // Added left padding
+      @media (max-width: 768px) {
+        padding: 15px 10px;
+      }
       .question {
         color: #d6d6d6;
         font-family: VioletSans;
@@ -267,6 +289,9 @@ body {
         font-weight: 400;
         line-height: 108.18%; /* 21.636px */
         cursor: pointer;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
       }
       .answer {
         color: #d6d6d6;
@@ -275,6 +300,9 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: 108.18%; /* 21.636px */
+        @media (max-width: 768px) {
+          font-size: 11px;
+        }
       }
     }
   }
@@ -314,6 +342,9 @@ body {
   .center-container {
     width: 68%;
     padding: 0 7.5%; // Added left padding
+    @media (max-width: 768px) {
+      padding: 0 3%;
+    }
     .title {
       color: var(--Schemes-On-Primary, #fff);
       font-family: "Space Grotesk";
@@ -321,6 +352,9 @@ body {
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
   .right-container {
@@ -335,5 +369,8 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 108.18%; /* 34.618px */
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 }

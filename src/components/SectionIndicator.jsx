@@ -71,14 +71,14 @@ export default function SectionIndicator() {
 
   return (
     <div
-      className={`fixed right-[5%] top-1/2 transform -translate-y-1/2 ${
+      className={`fixed right-0 md:right-[5%] top-1/2 transform -translate-y-1/2 ${
         isHeroVisible ? "hidden" : ""
       }`}
     >
       {sections.map((section) => (
         <div
           key={section.id}
-          className="flex justify-center items-center h-8 w-24"
+          className="flex justify-center items-center h-8 w-14 md:w-24"
         >
           {currentSection === section.id ? (
             <div className="flex items-center flex-col justify-center m-auto">
@@ -92,7 +92,7 @@ export default function SectionIndicator() {
               >
                 <circle cx="4.3125" cy="4.16406" r="4" fill="#E7A349" />
               </svg>
-              <span className="text-white text-sm font-['VioletSans'] fancy-text-border m-auto">
+              <span className="text-white text-[6px] md:text-sm font-['VioletSans'] fancy-text-border m-auto">
                 {section.name}
               </span>
             </div>

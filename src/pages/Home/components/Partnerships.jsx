@@ -19,45 +19,39 @@ export default function Partnerships() {
           <tr>
             <td className="table-title">Workplace Safety</td>
             <td className="table-content">
-              Safe workers are more productive, with fewer disruptions caused by
-              injuries or accidents, lower insurance costs, and improved
-              employee morale, all of which contribute to a more successful
-              operation.
+              Prioritizing safety is both a moral duty and a smart business
+              decision. A safe workforce is more engaged and productive,
+              reducing disruptions and improving performance.
             </td>
           </tr>
           <tr>
             <td className="table-title">Operational Efficiency</td>
             <td className="table-content">
-              Our systems enhance efficiency by allowing operators to control
-              tasks remotely with real-time precision, reducing the risk of
-              errors and accelerating workflows. This advanced control leads to
-              quicker task completion, optimized resource use, and smoother
-              operations
+              Providing workers with remote operation capabilities and real-time
+              data analysis leads to faster decision-making, reduced errors, and
+              improved overall efficiency in critical tasks.
             </td>
           </tr>
           <tr>
             <td className="table-title">Regulatory Complaince</td>
             <td className="table-content">
-              The real-time video feeds, AI-powered hazard identification, and
-              sensor data enable operators to conduct remote inspections,
-              swiftly identifying risks or compliance issues to prevent
-              accidents and violations. The system's data recording and storage
-              capabilities provide accurate documentation for audits, safety
-              reports, and regulatory inspections, ensuring continuous
-              compliance with industry standards.
+              Real-time video, AI hazard detection, and sensor data allow
+              operators to remotely inspect and quickly identify risks,
+              preventing accidents. Data storage ensures compliance for audits
+              and reports.
             </td>
           </tr>
         </table>
         <div className="cta flex flex-col gap-4">
           <p className="cta-text">
-            Join us in pioneering the next generation of robotics that solve
-            real-world problems and save lives. Together, we can drive
-            meaningful impact across industries.
+            Organisations interested in exploring how Eclipse Remote Systems can
+            transform your approach to safety and efficiency can contact us to
+            schedule a demo or discuss potential collaborations.
           </p>
-          <ButtonComponentv2 text="Join Now" link="contact" styles="w-fit" />
+          <ButtonComponentv2 text="Contact Us" link="contact" styles="w-fit" />
         </div>
       </div>
-      <div className="right-container"/>
+      <div className="right-container" />
       <div className="line-v-1" />
       <div className="line-v-3" />
     </section>
