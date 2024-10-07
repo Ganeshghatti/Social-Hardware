@@ -156,12 +156,6 @@ body {
           padding: 8px 10px;
         }
       }
-      @media (max-width: 768px) {
-        .param {
-          width: 50%;
-          align-self: flex-end;
-        }
-      }
       .param:first-child {
         border-top: 1px solid #353539;
       }
@@ -315,8 +309,8 @@ body {
   .card {
     width: 50%;
     @media (max-width: 768px) {
-      width: 96%;
-      margin: auto;
+      width: 80%;
+      margin-left: 4%;
     }
     .img {
       width: 100%;

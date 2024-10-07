@@ -69,7 +69,7 @@ export default function Functionalities() {
             {cardsData[currentIndex].text}
           </p>
         </div>
-        <div className="card flex-col gap-6 transition-all duration-750 opacity-50 hidden md:flex">
+        <div className="card flex-col gap-6 transition-all duration-750 opacity-25 hidden md:flex">
           <img
             src={cardsData[nextIndex].image}
             alt={cardsData[nextIndex].text}

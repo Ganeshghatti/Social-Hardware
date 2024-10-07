@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 
 const sections = [
-  { id: "home", name: "HOME" },
   { id: "technology", name: "TECHNOLOGY" },
   { id: "features", name: "FEATURES" },
-  { id: "partnerships", name: "PARTNERSHIPS" },
+  { id: "functionalities", name: "FUNCTIONALITIES" },
   { id: "faq", name: "F.A.Q" },
+  { id: "partnerships", name: "PARTNERSHIPS" },
   { id: "contact", name: "CONTACT" },
+  { id: "whatsappCTA", name: "WHATSAPP" },
 ];
 
 const Dot = () => (
@@ -25,23 +26,27 @@ const Dot = () => (
 export default function SectionIndicator() {
   const [currentSection, setCurrentSection] = useState("");
   const [isHeroVisible, setIsHeroVisible] = useState(true);
-  const [isFunctionalitiesVisible, setIsFunctionalitiesVisible] = useState(false);
+  const [isVideoVisible, setIsVideoVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight / 2;
       const heroSection = document.getElementById("hero");
-      const functionalitiesSection = document.getElementById("functionalities");
+      const videoSection = document.getElementById("video");
 
       if (heroSection) {
         const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
         setIsHeroVisible(window.scrollY < heroBottom);
       }
 
-      if (functionalitiesSection) {
-        const functionalitiesTop = functionalitiesSection.offsetTop;
-        const functionalitiesBottom = functionalitiesTop + functionalitiesSection.offsetHeight;
-        setIsFunctionalitiesVisible(scrollPosition >= functionalitiesTop && scrollPosition < functionalitiesBottom);
+      if (videoSection) {
+        const videoTop = videoSection.offsetTop;
+        const videoBottom =
+          videoTop + videoSection.offsetHeight;
+        setIsVideoVisible(
+          scrollPosition >= videoTop &&
+            scrollPosition < videoBottom
+        );
       }
 
       for (let section of sections) {
@@ -65,13 +70,13 @@ export default function SectionIndicator() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  if (isHeroVisible || isFunctionalitiesVisible) {
+  if (isHeroVisible || isVideoVisible) {
     return null;
   }
 
   return (
     <div
-      className={`fixed right-0 md:right-[5%] top-1/2 transform -translate-y-1/2 ${
+      className={`fixed right-0 z-10 md:right-[5%] top-1/2 transform -translate-y-1/2 ${
         isHeroVisible ? "hidden" : ""
       }`}
     >

@@ -2,6 +2,12 @@ import React from "react";
 import WhatsappCTAimg from "../../../../public/assets/images/WhatsappCTA.png";
 
 export default function WhatsappCTA() {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "9353586240";
+    const whatsappUrl = `https://wa.me/${phoneNumber}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <section
       id="whatsappCTA"
@@ -13,7 +19,10 @@ export default function WhatsappCTA() {
         No matter the challenge.
         <br />
         Eclipse has you covered.
-        <button className="bg-[#46C756] text-white flex gap-2 items-center font-['VioletSans'] px-2 md:px-4 py-1 md:py-2 rounded-md text-sm w-full md:w-auto md:text-2xl mt-4">
+        <button 
+          className="bg-[#46C756] text-white flex gap-1 md:gap-2 items-center font-['VioletSans'] px-2 md:px-4 py-1 md:py-2 rounded-md text-sm w-full md:w-auto md:text-2xl mt-4"
+          onClick={handleWhatsAppClick}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="39"
@@ -81,7 +90,7 @@ export default function WhatsappCTA() {
               </clipPath>
             </defs>
           </svg>
-          Message us on WhatApp
+          Message us on WhatsApp
         </button>
       </div>
       <img

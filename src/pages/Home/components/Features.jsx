@@ -31,6 +31,14 @@ export default function Features() {
       image: feature3,
     },
   ];
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="features" className="relative flex">
       <TitleComponent
@@ -39,18 +47,17 @@ export default function Features() {
       />
       <div className="cards-parent-container flex flex-col w-full mt-16 md:mt-32">
         {cardData.map((card, index) => (
-          <div className="cards-container">
+          <div className="cards-container" key={index}>
             <div
-              className="card w-full md:w-[80%] ml-0 md:ml-[4%] relative z-10 flex flex-col md:flex-row justify-end items-center pt-6 md:pt-0"
-              key={index}
+              className="card w-[80%] ml-[4%] relative z-10 flex flex-col md:flex-row justify-end items-center pt-6 md:pt-0"
             >
-              <div className="card-left w-11/12 md:w-1/4 flex flex-col gap-4 md:absolute left-0">
+              <div className="card-left w-full md:w-1/4 flex flex-col gap-4 md:absolute left-0">
                 <p className="index w-fit">{card.index}</p>
                 <p className="title">{card.title}</p>
                 <p className="description">{card.description}</p>
               </div>
-              <div className="card-right w-full md:w-[85%] flex flex-col md:flex-row items-center relative justify-center mt-6 md:mt-0">
-                <div className="params-container md:absolute right-0 top-0 md:top-1/2 md:-translate-y-1/2 flex flex-col h-full justify-start md:justify-center w-[68%] md:w-1/2">
+              <div className="card-right w-full pl-[15%] md:w-[85%] flex flex-col md:flex-row items-end md:items-center relative justify-center mt-6 md:mt-0">
+                <div className="params-container md:absolute right-0 top-0 md:top-1/2 md:-translate-y-1/2 flex flex-col h-full justify-start md:justify-center self-end w-1/2">
                   {card.params.map((param, index) => (
                     <p key={index} className="param">
                       {param}
@@ -60,9 +67,12 @@ export default function Features() {
                 <img
                   src={card.image}
                   alt={card.title}
-                  className="w-[68%] md:w-1/2 z-10"
+                  className="w-full md:w-1/2 z-10"
                 />
-                <div className="flex gap-4 right-0 get-a-trial block md:absolute justify-center md:justify-end bottom-0 w-[68%] md:w-1/2 cursor-pointer">
+                <div 
+                  className="flex gap-4 right-0 get-a-trial block md:absolute justify-center md:justify-end bottom-0 w-1/2 cursor-pointer"
+                  onClick={scrollToContact}
+                >
                   GET A TRIAL
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
