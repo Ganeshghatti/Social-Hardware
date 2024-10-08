@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="w-[95%] md:w-[53%] z-10">
         <img src={heroimg} alt="hero" className="w-full h-auto object-cover  md:pt-28" />
       </div>
-      <div className="w-full text-center md:text-left md:w-[42%] relative md:absolute md:left-[4%] md:transform md:translate-y-[50%] content flex flex-col gap-6 z-10 md:pt-24">
+      <div className="w-full text-center md:text-left md:w-[42%] relative md:absolute md:left-[4%] md:transform md:translate-y-[50%] content flex flex-col gap-6 z-10 pt-24 md:pt-0">
         <h1 className="text-white title">
           Pioneering Safety &nbsp;
           <br className="hidden md:block" />
