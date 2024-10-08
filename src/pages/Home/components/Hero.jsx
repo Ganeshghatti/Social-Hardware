@@ -10,32 +10,26 @@ export default function Hero() {
       <div className="w-[95%] md:w-[53%] z-10">
         <img src={heroimg} alt="hero" className="w-full h-auto object-cover  md:pt-28" />
       </div>
-      <div className="w-full text-center md:text-left md:w-[42%] relative self-center md:left-[4%]  content flex flex-col gap-6 z-10 pt-24 md:pt-0">
+      <div className="w-full text-center md:text-left md:w-[55%] relative self-center md:left-[4%]  content flex flex-col gap-6 z-10 pt-24 md:pt-0">
         <h1 className="text-white title">
-          Pioneering Safety &nbsp;
+          Pioneering Safety
           <br className="hidden md:block" />
           and Efficiency with <br className="hidden md:block" />
           <span className="text-orange"> Next-Generation</span>
           <br className="hidden md:block" /> Telerobotic Solutions
         </h1>
-        <p className="desc hidden md:block">
+        <p className="desc hidden md:block w-3/4">
           Our cutting-edge teleoperated robots allow you to manage hazardous
           operations remotely, keeping your workforce safe. With real-time data
           insights and advanced situational awareness, you maintain precise
-          control in even the toughest conditions. Eclipse Remote Systems give
-          you the tools to complete high-risk tasks securely and efficiently,
-          reducing downtime and maximizing safety. Operate smarter, minimize
-          risk, and achieve more with Eclipse Remote Systems.
+          control in even the toughest conditions.
         </p>
       </div>
       <p className="ph-desc md:hidden absolute bottom-[2%] left-0 w-[95%] z-10 pl-[4%]">
         Our cutting-edge teleoperated robots allow you to manage hazardous
         operations remotely, keeping your workforce safe. With real-time data
         insights and advanced situational awareness, you maintain precise
-        control in even the toughest conditions. Eclipse Remote Systems give you
-        the tools to complete high-risk tasks securely and efficiently, reducing
-        downtime and maximizing safety. Operate smarter, minimize risk, and
-        achieve more with Eclipse Remote Systems.
+        control in even the toughest conditions.
       </p>
       <div className="line-v-1" />
       <div className="line-v-2" />

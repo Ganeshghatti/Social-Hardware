@@ -1,24 +1,30 @@
 import React, { useState, useEffect } from "react";
-import Card1 from "../../../../public/assets/images/card1.png";
-import Card2 from "../../../../public/assets/images/card2.png";
-import Card3 from "../../../../public/assets/images/card3.png";
+import Card1 from "../../../../public/assets/images/functionalities/section-1-tech.gif";
+import Card2 from "../../../../public/assets/images/functionalities/section-2-tech.gif";
+import Card3 from "../../../../public/assets/images/functionalities/section-3-tech.gif";
+import Card4 from "../../../../public/assets/images/functionalities/section-4-tech.gif";
+import Card5 from "../../../../public/assets/images/functionalities/section-5-tech.gif";
 
 const cardsData = [
   {
-    text: "Sub-5ms latency in VR provides real-time feedback, enabling split-second decisions in critical combat scenarios, which can be crucial for mission success.",
+    text: "Eclipse Remote Systems are AR-controlled teleoperated robots designed to improve workplace safety and operational efficiency in high-risk environments. With advanced sensor technology, Eclipse minimizes human exposure to danger while delivering precise, actionable insights that drive smarter decision-making. With unparalleled adaptability, Eclipse is paving the way for safer, more effective workflows.",
     image: Card1,
   },
   {
-    text: "Gesture recognition lets soldiers control robots or drones with hand movements, enabling quick, intuitive commands and eliminating bulky controllers.",
+    text: "Equipped with advanced gesture-based sensory technology, Eclipse minimizes human exposure to danger by enabling precise teleoperated control during critical tasks. The cutting-edge user feedback system allows operators to feel and interact with the environment remotely, ensuring accurate and safe operations.",
     image: Card2,
   },
   {
-    text: "Sub-5ms latency in VR provides real-time feedback, enabling split-second decisions in critical combat scenarios, which can be crucial for mission success.",
+    text: "Eclipse Remote Systems use mesh networking to significantly enhance performance during operations in hazardous scenarios. The network enables seamless communication across multiple devices, ensuring reliable connections even in compromised environments. Each node relays data, allowing coverage of large or obstructed areas like collapsed buildings or rugged terrains while maintaining stable communication.",
     image: Card3,
   },
   {
-    text: "Sub-5ms latency in VR provides real-time feedback, enabling split-second decisions in critical combat scenarios, which can be crucial for mission success.",
-    image: Card3,
+    text: "Provides operators with access to a variety of quick-change attachments that can be tailored to the mission's specific needs. Standard tools include biomechanical hands for delicate manipulations, a precision gripper for secure handling of objects, a disc cutter for cutting through debris, and a metal detector for identifying hazardous materials or structural elements.",
+    image: Card4,
+  },
+  {
+    text: "Built for versatility, Eclipse Remote Systems seamlessly adapt to a wide range of operational environments, from disaster zones to military operations. Their user-friendly, intuitive interface reduces the need for extensive training, allowing for quick deployment and immediate integration into existing workflows. This makes it an ideal solution for organizations looking to enhance operational capabilities without disrupting established processes.",
+    image: Card5,
   },
 ];
 
@@ -30,7 +36,9 @@ export default function Functionalities() {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + cardsData.length) % cardsData.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + cardsData.length) % cardsData.length
+    );
   };
 
   useEffect(() => {
@@ -46,7 +54,7 @@ export default function Functionalities() {
       id="functionalities"
       className="relative flex flex-col gap-8 md:gap-16 py-4 md:py-8"
     >
-      <div className="carousel  z-10 px-0 w-full md:w-11/12 self-center flex items-center gap-4 md:gap-8 overflow-hidden">
+      <div className="carousel z-10 px-0 w-full md:w-11/12 self-center flex items-center gap-4 md:gap-8 overflow-hidden">
         <div className="card card-prev flex-col gap-6 transition-all duration-750 opacity-25 hidden md:flex">
           <img
             src={cardsData[prevIndex].image}

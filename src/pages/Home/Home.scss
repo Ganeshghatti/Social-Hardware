@@ -3,6 +3,16 @@
   font-family: VioletSans;
   src: url("../../../public/assets/fonts/VioletSans-Regular.ttf");
 }
+
+// Mixin for responsive font sizing using clamp()
+@mixin responsive-font($min-size, $max-size) {
+  font-size: clamp(#{$min-size}, calc(#{$min-size} + (#{strip-unit($max-size)} - #{strip-unit($min-size)}) * ((100vw - 320px) / (1200 - 320))), #{$max-size});
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
 body {
   background: linear-gradient(268deg, #000 1.93%, #1b1b1b 100.68%);
   width: 100%;
@@ -17,18 +27,15 @@ body {
     .title {
       color: #d4d4d4;
       font-family: VioletSans;
-      font-size: 56px;
+      @include responsive-font(26px, 56px);
       font-style: normal;
       font-weight: 400;
       line-height: 110%;
-      @media (max-width: 768px) {
-        font-size: 26px;
-      }
     }
     .desc {
       color: #e7a349;
       font-family: "Space Grotesk", sans-serif;
-      font-size: 18px;
+      @include responsive-font(11px, 18px);
       font-style: normal;
       font-weight: 400;
       line-height: 124%; /* 19.84px */
@@ -37,7 +44,7 @@ body {
   .ph-desc {
     color: #e7a349;
     font-family: "Space Grotesk", sans-serif;
-    font-size: 11px;
+    @include responsive-font(11px, 18px);
     font-style: normal;
     font-weight: 400;
     line-height: 124%; /* 19.84px */
@@ -85,13 +92,10 @@ body {
     .text {
       color: #d6d6d6;
       font-family: VioletSans;
-      font-size: 28px;
+      @include responsive-font(16px, 28px);
       font-style: normal;
       font-weight: 400;
       line-height: 120%; /* 28.8px */
-      @media (max-width: 768px) {
-        font-size: 16px;
-      }
     }
   }
 }
@@ -124,24 +128,18 @@ body {
       .title {
         color: #d6d6d6;
         font-family: VioletSans;
-        font-size: 28px;
+        @include responsive-font(16px, 28px);
         font-style: normal;
         font-weight: 400;
         line-height: 120%; /* 28.8px */
-        @media (max-width: 768px) {
-          font-size: 16px;
-        }
       }
       .description {
         color: var(--Schemes-On-Primary, #fff);
         font-family: "Space Grotesk";
-        font-size: 18px;
+        @include responsive-font(11px, 18px);
         font-style: normal;
         font-weight: 400;
         line-height: 108.18%; /* 15.145px */
-        @media (max-width: 768px) {
-          font-size: 11px;
-        }
       }
     }
     .card-right {
@@ -150,13 +148,12 @@ body {
         color: #d6d6d6;
         text-align: right;
         font-family: "Space Grotesk";
-        font-size: 18px;
+        @include responsive-font(11px, 18px);
         font-style: normal;
         font-weight: 500;
         line-height: 120%; /* 16.8px */
         padding: 20px 25px;
         @media (max-width: 768px) {
-          font-size: 11px;
           padding: 8px 4px;
         }
       }
@@ -182,13 +179,12 @@ body {
     .title {
       color: #d6d6d6;
       font-family: VioletSans;
-      font-size: 28px;
+      @include responsive-font(16px, 28px);
       font-style: normal;
       font-weight: 400;
       line-height: 120%; /* 33.6px */
       padding: 50px 0; // Added left padding
       @media (max-width: 768px) {
-        font-size: 16px;
         padding: 50px 0 10px 0;
       }
     }
@@ -202,7 +198,7 @@ body {
       .table-title {
         color: var(--Schemes-On-Primary, #fff);
         font-family: "Space Grotesk", sans-serif;
-        font-size: 28px;
+        @include responsive-font(16px, 28px);
         font-style: normal;
         font-weight: 400;
         line-height: 120%; /* 28.8px */
@@ -214,7 +210,6 @@ body {
         padding: 50px 40px; // Added left padding
         text-align: left;
         @media (max-width: 768px) {
-          font-size: 16px;
           padding: 5px;
           text-align: center;
         }
@@ -222,7 +217,7 @@ body {
       .table-content {
         color: #bfbfbf;
         font-family: "Space Grotesk";
-        font-size: 18px;
+        @include responsive-font(11px, 18px);
         font-style: normal;
         font-weight: 400;
         line-height: 108.18%; /* 15.145px */
@@ -232,7 +227,6 @@ body {
         justify-content: center;
         padding: 50px 40px; // Matched padding with table-title
         @media (max-width: 768px) {
-          font-size: 11px;
           padding: 5px;
         }
       }
@@ -248,13 +242,10 @@ body {
       .cta-text {
         color: var(--Schemes-On-Primary, #fff);
         font-family: "Space Grotesk";
-        font-size: 28px;
+        @include responsive-font(16px, 28px);
         font-style: normal;
         font-weight: 400;
         line-height: 108.18%; /* 25.963px */
-        @media (max-width: 768px) {
-          font-size: 16px;
-        }
       }
     }
   }
@@ -282,25 +273,19 @@ body {
       .question {
         color: #d6d6d6;
         font-family: VioletSans;
-        font-size: 20px;
+        @include responsive-font(16px, 20px);
         font-style: normal;
         font-weight: 400;
         line-height: 108.18%; /* 21.636px */
         cursor: pointer;
-        @media (max-width: 768px) {
-          font-size: 16px;
-        }
       }
       .answer {
         color: #d6d6d6;
         font-family: VioletSans;
-        font-size: 18px;
+        @include responsive-font(11px, 18px);
         font-style: normal;
         font-weight: 400;
         line-height: 108.18%; /* 21.636px */
-        @media (max-width: 768px) {
-          font-size: 11px;
-        }
       }
     }
   }
@@ -311,7 +296,7 @@ body {
 #functionalities {
   width: 100%;
   .card-active {
-    width: 75%;
+    width: 50%;
   }
   .card-next {
     width: 25%;
@@ -334,13 +319,10 @@ body {
     .text {
       color: #d6d6d6;
       font-family: "Space Grotesk";
-      font-size: 28px;
+      @include responsive-font(16px, 28px);
       font-style: normal;
       font-weight: 400;
       line-height: 120%; /* 28.8px */
-      @media (max-width: 768px) {
-        font-size: 16px;
-      }
     }
   }
 }
@@ -358,13 +340,10 @@ body {
     .title {
       color: var(--Schemes-On-Primary, #fff);
       font-family: "Space Grotesk";
-      font-size: 28px;
+      @include responsive-font(16px, 28px);
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      @media (max-width: 768px) {
-        font-size: 16px;
-      }
     }
   }
   .right-container {
@@ -375,12 +354,9 @@ body {
   .left {
     color: #d6d6d6;
     font-family: VioletSans;
-    font-size: 28px;
+    @include responsive-font(16px, 28px);
     font-style: normal;
     font-weight: 400;
     line-height: 108.18%; /* 34.618px */
-    @media (max-width: 768px) {
-      font-size: 16px;
-    }
   }
 }

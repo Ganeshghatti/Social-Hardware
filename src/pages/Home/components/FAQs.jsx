@@ -3,25 +3,45 @@ import TitleComponent from "../../../components/TitleComponent";
 
 const faqData = [
   {
-    question: "How Prosthetics work?",
-    answer:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum eos fugiat pariatur provident error saepe laboriosam, sit magnam quo est.",
+    question: "What is Eclipse Remote Systems?",
+    answer: "Eclipse Remote Systems is an advanced telerobotic platform designed to perform complex operations in hazardous environments. Using augmented reality (AR) control, bio-inverse kinematics, and gesture-based technology, it offers operators superior precision, situational awareness, and safety while performing tasks from a remote location."
   },
   {
-    question: "What are the benefits of telerobotic solutions?",
-    answer:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum eos fugiat pariatur provident error saepe laboriosam, sit magnam quo est.",
+    question: "What industries can benefit from Eclipse Remote Systems?",
+    answer: "Eclipse Remote Systems is designed for a wide range of industries that require safe, efficient operations in high-risk environments, including: Infrastructure and Construction, Utilities and Energy (Electricity, Water, Oil & Gas), Telecommunications, Environmental Monitoring and Regulation, Mining and Geology, Military and Defense, Transportation, Disaster Management, Manufacturing, and Hazardous Waste Management. These industries benefit from Eclipse's ability to handle dangerous tasks without compromising safety or efficiency."
   },
   {
-    question: "How does your technology ensure safety?",
-    answer:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum eos fugiat pariatur provident error saepe laboriosam, sit magnam quo est.",
+    question: "How does Eclipse Remote Systems enhance safety?",
+    answer: "Eclipse Remote Systems significantly enhances safety by enabling operators to work remotely, far from hazardous environments. The immersive augmented reality (AR) control system provides real-time audio and visual streams along with essential data, giving operators a precise understanding of the environment and live feedback to react quickly to potential threats."
   },
   {
-    question: "How does your technology ensure safety?",
-    answer:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum eos fugiat pariatur provident error saepe laboriosam, sit magnam quo est.",
+    question: "What kinds of tasks can Eclipse Remote Systems perform?",
+    answer: "Eclipse Remote Systems is highly versatile and can perform a variety of complex tasks, including but not limited to: Maintenance and repair operations, Structural and equipment inspections, Hazardous material handling, Bomb disposal, Emergency response tasks, Infrastructure monitoring and assessments, and Precision cutting, manipulation, and assembly. This adaptability makes it suitable for both routine maintenance and high-risk interventions."
   },
+  {
+    question: "How does the augmented reality (AR) control system work?",
+    answer: "The AR control system provides operators with real-time audio and visual streams from the robot's surroundings, allowing them to control the system with precision. This detailed feed, combined with critical data overlays, ensures that operators can navigate and manipulate the environment safely, even in challenging conditions."
+  },
+  {
+    question: "Can Eclipse Remote Systems be customized for different applications?",
+    answer: "Yes, Eclipse Remote Systems offers a range of modular tool attachments that can be tailored to specific operational needs. Available attachments include: Metal detectors for identifying buried hazards or objects, Precision grippers for delicate handling, Bionic hands for detailed manipulation, and Cutting discs for slicing through materials. These modular tools enable the system to adapt to a wide variety of industrial, regulatory, and operational challenges."
+  },
+  {
+    question: "What is the range of operation for Eclipse Remote Systems?",
+    answer: "Eclipse Remote Systems has a range of 1.5 kilometers and can operate continuously for up to 90 minutes. Its robust mesh network technology allows for seamless communication even in environments without a direct line of sight, ensuring reliable performance across large or obstructed areas."
+  },
+  {
+    question: "What are the key technologies integrated into Eclipse Remote Systems?",
+    answer: "Eclipse Remote Systems incorporates several advanced technologies, including: Augmented Reality (AR) control for immersive, precise operation, Bio-inverse kinematics for smooth, responsive control of the system, Gesture-based control and depth perception for natural, intuitive handling of complex tasks, and Mesh network technology to maintain strong communication and operational reliability across vast areas. These technologies work together to deliver exceptional performance, safety, and control in high-risk environments."
+  },
+  {
+    question: "How does Eclipse Remote Systems improve operational efficiency?",
+    answer: "Eclipse Remote Systems enhances efficiency by allowing operators to complete tasks remotely, minimizing the risk to human personnel. The AR interface overlays real-time data directly onto the operator's view, while built-in AI analyzes sensor inputs, camera feeds, and environmental data. If a hazard is detected, it is flagged instantly on the AR display, enabling the operator to take immediate action. By removing people from dangerous environments, the likelihood of accidents is greatly reduced, preventing unexpected delays due to safety concerns. This allows work to continue without interruption, improving overall productivity and reducing operational downtime."
+  },
+  {
+    question: "How can I schedule a demo or learn more about Eclipse Remote Systems?",
+    answer: "To learn more about Eclipse Remote Systems, schedule a demo, or explore potential collaboration opportunities, please contact us via our contact form or WhatsApp. We're ready to discuss how our technology can enhance your operations."
+  }
 ];
 
 export default function FAQs() {

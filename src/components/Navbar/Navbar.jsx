@@ -30,9 +30,9 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="flex justify-between items-center md:px-16 px-4 absolute top-0 left-0 w-full z-50">
-      <img src={logo} alt="logo" className="w-44 h-6 md:w-72 md:h-11 object-contain" />
-      <ul className="hidden md:flex items-center justify-center gap-12 text-white absolute left-1/2 transform -translate-x-1/2">
+    <nav className="flex justify-between items-center lg:px-16 px-4 absolute top-0 left-0 w-full z-50">
+      <img src={logo} alt="logo" className="w-44 h-6 lg:w-72 lg:h-11 object-contain" />
+      <ul className="hidden lg:flex items-center justify-center gap-12 text-white absolute left-1/2 transform -translate-x-1/2">
         {navItems.map((item) => (
           <li
             key={item.id}
@@ -46,9 +46,9 @@ export default function Navbar() {
       <ButtonComponentv1
         text={"Contact"}
         link={"contact"}
-        styles={"hidden md:flex"}
+        styles={"hidden lg:flex"}
       />
-      <div className="md:hidden">
+      <div className="lg:hidden">
         {isOpen ? (
           <IoMdClose
             size={30}
@@ -83,7 +83,7 @@ export default function Navbar() {
               <ButtonComponentv1
                 text={"Contact"}
                 link={"contact"}
-                styles={"md:hidden flex"}
+                styles={"lg:hidden flex"}
               />
             </div>
           </>

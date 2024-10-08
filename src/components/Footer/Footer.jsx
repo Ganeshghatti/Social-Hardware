@@ -12,6 +12,7 @@ export default function Footer() {
   };
   const navItems = [
     { name: "Technology", id: "technology" },
+    { name: "Tech Demo", id: "video" },
     { name: "Features", id: "features" },
     { name: "FAQ", id: "faq" },
     { name: "Partnerships", id: "partnerships" },
@@ -38,7 +39,7 @@ export default function Footer() {
         </ul>
         <span className="flex items-center justify-center gap-4">
           <a
-            href="https://www.linkedin.com/company/social-hardware/"
+            href="https://www.linkedin.com/company/social-hardware"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-orange transition-all duration-300"

@@ -56,7 +56,7 @@ export default function Features() {
                 <p className="title">{card.title}</p>
                 <p className="description">{card.description}</p>
               </div>
-              <div className="card-right  w-full pl-[15%] md:w-[85%] flex flex-col md:flex-row items-end md:items-center relative justify-center mt-6 md:mt-0">
+              <div className="card-right w-full pl-[15%] md:pl-0 md:w-[85%] flex flex-col md:flex-row items-end md:items-center relative justify-center mt-6 md:mt-0">
                 <div className="params-container md:absolute right-0 top-0 md:top-1/2 md:-translate-y-1/2 flex flex-col h-full justify-start md:justify-center self-end w-1/2">
                   {card.params.map((param, index) => (
                     <p key={index} className="param">
