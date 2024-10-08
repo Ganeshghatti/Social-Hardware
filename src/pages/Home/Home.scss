@@ -58,6 +58,7 @@ body {
 }
 #video {
   border-bottom: 1px solid #353539;
+  border-top: 1px solid #353539;
   .video-mp4 {
     --s: 125px; /* the size on the corner */
     --t: 5px; /* the thickness of the border */
@@ -306,8 +307,20 @@ body {
 }
 #functionalities {
   width: 100%;
+  .card-active {
+    width: 75%;
+  }
+  .card-next {
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-prev {
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+  }
   .card {
-    width: 50%;
     @media (max-width: 768px) {
       width: 80%;
       margin-left: 4%;

@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 
 const sections = [
   { id: "technology", name: "TECHNOLOGY" },
+  { id: "video", name: "DEMO" },
   { id: "features", name: "FEATURES" },
   { id: "functionalities", name: "FUNCTIONALITIES" },
   { id: "faq", name: "F.A.Q" },
   { id: "partnerships", name: "PARTNERSHIPS" },
   { id: "contact", name: "CONTACT" },
-  { id: "whatsappCTA", name: "WHATSAPP" },
+  // { id: "whatsappCTA", name: "WHATSAPP" },
 ];
 
 const Dot = () => (
@@ -26,27 +27,15 @@ const Dot = () => (
 export default function SectionIndicator() {
   const [currentSection, setCurrentSection] = useState("");
   const [isHeroVisible, setIsHeroVisible] = useState(true);
-  const [isVideoVisible, setIsVideoVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight / 2;
       const heroSection = document.getElementById("hero");
-      const videoSection = document.getElementById("video");
 
       if (heroSection) {
         const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
         setIsHeroVisible(window.scrollY < heroBottom);
-      }
-
-      if (videoSection) {
-        const videoTop = videoSection.offsetTop;
-        const videoBottom =
-          videoTop + videoSection.offsetHeight;
-        setIsVideoVisible(
-          scrollPosition >= videoTop &&
-            scrollPosition < videoBottom
-        );
       }
 
       for (let section of sections) {
@@ -70,7 +59,7 @@ export default function SectionIndicator() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  if (isHeroVisible || isVideoVisible) {
+  if (isHeroVisible) {
     return null;
   }
 

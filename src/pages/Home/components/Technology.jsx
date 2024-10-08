@@ -38,7 +38,7 @@ export default function Technology() {
         title="Technology"
         styles={"absolute left-[4vw] top-[2vh]"}
       />
-      <div className="carousel-container pt-10 md:pt-32 z-10 ml-[4%] w-[80%] md:w-[20%]">
+      <div className="carousel-container pt-10 md:pt-32 z-10 ml-[4%] w-[80%] md:w-[35%]">
         <div className="carousel">
           {carouselData.map((item, index) => (
             <p
@@ -90,7 +90,7 @@ export default function Technology() {
           </button>
         </div>
       </div>
-      <div className="threeD-container block md:absolute left-[16%] w-11/12 md:w-[68%] h-auto md:h-full top-0 z-10">
+      <div className="threeD-container block md:absolute left-[39%] w-11/12 md:w-[45%] h-auto md:h-full top-0 z-10">
         <Canvas style={{ background: 'transparent' }}>
           <EclipseRobot scale={[3, 3, 3]} position={[0, -1.5, 0]} />
           <OrbitControls enableZoom={false} enablePan={false} />

@@ -18,36 +18,47 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="px-[4%] flex justify-between flex-col gap-6 md:gap-0 md:flex-row items-center py-6">
-      <img src={logo} alt="Eclipse Remote Systems" className="w-48" />
-      <ul className="flex items-center justify-center gap-4 md:gap-12 text-white">
-        {navItems.map((item) => (
-          <li
-            key={item.id}
-            className="hover:text-orange transition-all duration-300 cursor-pointer text-sm md:text-base"
-            onClick={() => scrollToSection(item.id)}
+    <footer className="flex flex-col">
+      <div className="flex px-[4%] justify-between flex-col gap-6 relative md:gap-0 md:flex-row items-center py-5">
+        <img
+          src={logo}
+          alt="Eclipse Remote Systems"
+          className="w-44 h-6 md:w-72 md:h-11 object-contain"
+        />
+        <ul className="flex items-center justify-center gap-4 md:gap-12 text-white md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+          {navItems.map((item) => (
+            <li
+              key={item.id}
+              className="hover:text-orange transition-all duration-300 cursor-pointer text-sm md:text-base"
+              onClick={() => scrollToSection(item.id)}
+            >
+              {item.name}
+            </li>
+          ))}
+        </ul>
+        <div className="flex items-center justify-center gap-4">
+          <a
+            href="https://www.linkedin.com/company/social-hardware/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-orange transition-all duration-300"
           >
-            {item.name}
-          </li>
-        ))}
-      </ul>
-      <div className="flex items-center justify-center gap-4">
-        <a
-          href="https://www.linkedin.com/company/social-hardware/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-orange transition-all duration-300"
-        >
-          <FaLinkedin size={24} />
-        </a>
-        <a
-          href="https://x.com/social_hardware"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-orange transition-all duration-300"
-        >
-          <FaXTwitter size={24} />
-        </a>
+            <FaLinkedin size={24} />
+          </a>
+          <a
+            href="https://x.com/social_hardware"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-orange transition-all duration-300"
+          >
+            <FaXTwitter size={24} />
+          </a>
+        </div>
+      </div>
+      <div className="flex w-full justify-center items-center py-5">
+        <p className="text-white text-sm md:text-base">
+          © 2024 Social Hardware International Pvt. Ltd. All rights reserved
+        </p>
       </div>
     </footer>
   );

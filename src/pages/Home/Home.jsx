@@ -17,9 +17,9 @@ export default function Home() {
     <>
       <Hero />
       <BlockComponent />
-      <Video />
       <Technology />
-      <BlockComponent />
+      {/* <BlockComponent /> */}
+      <Video />
       <Features />
       <BlockComponent />
       <Functionalities />
@@ -28,9 +28,9 @@ export default function Home() {
       <BlockComponent />
       <Partnerships />
       <BlockComponent />
-      <Contact /> 
+      <Contact />
       <BlockComponent />
-      <WhatsappCTA />
+      {/* <WhatsappCTA /> */}
       <SectionIndicator />
     </>
   );

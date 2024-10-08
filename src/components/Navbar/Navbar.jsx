@@ -23,15 +23,16 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Technology", id: "technology" },
+    { name: "Tech Demo", id: "video" },
     { name: "Features", id: "features" },
     { name: "FAQ", id: "faq" },
     { name: "Partnerships", id: "partnerships" },
   ];
 
   return (
-    <nav className="flex justify-between items-center md:px-16 px-4">
-      <img src={logo} alt="logo" className="w-36 h-4 md:w-64 md:h-9 object-contain" />
-      <ul className="flex items-center justify-center gap-12 text-white hidden md:flex">
+    <nav className="flex justify-between items-center md:px-16 px-4 absolute top-0 left-0 w-full z-50">
+      <img src={logo} alt="logo" className="w-44 h-6 md:w-72 md:h-11 object-contain" />
+      <ul className="hidden md:flex items-center justify-center gap-12 text-white absolute left-1/2 transform -translate-x-1/2">
         {navItems.map((item) => (
           <li
             key={item.id}

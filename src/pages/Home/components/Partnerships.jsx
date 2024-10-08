@@ -44,11 +44,11 @@ export default function Partnerships() {
         </table>
         <div className="cta flex flex-col gap-4">
           <p className="cta-text">
-            Organisations interested in exploring how Eclipse Remote Systems can
-            transform your approach to safety and efficiency can contact us to
-            schedule a demo or discuss potential collaborations.
+            Organisations interested in discovering how Eclipse Remote Systems
+            can enhance their safety and efficiency are invited to contact us
+            for a demo or to explore collaboration opportunities.
           </p>
-          <ButtonComponentv2 text="Contact Us" link="contact" styles="w-fit" />
+          {/* <ButtonComponentv2 text="Contact Us" link="contact" styles="w-fit" /> */}
         </div>
       </div>
       <div className="right-container" />
