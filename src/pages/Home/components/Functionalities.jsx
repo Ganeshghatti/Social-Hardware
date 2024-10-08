@@ -78,7 +78,7 @@ export default function Functionalities() {
           </p>
         </div>
       </div>
-      <div className="arrow-block flex gap-4 px-[4%] md:px-[16%] w-fit">
+      <div className="arrow-block flex md:self-center gap-4 px-[4%] md:px-[16%] w-fit">
         <button
           onClick={prevSlide}
           className="hover:opacity-75 transition-opacity"
