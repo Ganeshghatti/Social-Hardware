@@ -5,12 +5,12 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="flex w-full flex-col-reverse md:flex-row-reverse relative pt-8 md:py-0 gap-6 md:gap-0"
+      className="flex w-full flex-col-reverse md:flex-row-reverse relative md:justify-between pt-8 md:py-0 gap-6 md:gap-0"
     >
       <div className="w-[95%] md:w-[53%] z-10">
         <img src={heroimg} alt="hero" className="w-full h-auto object-cover  md:pt-28" />
       </div>
-      <div className="w-full text-center md:text-left md:w-[42%] relative md:absolute md:left-[4%] md:transform md:translate-y-[50%] content flex flex-col gap-6 z-10 pt-24 md:pt-0">
+      <div className="w-full text-center md:text-left md:w-[42%] relative self-center md:left-[4%]  content flex flex-col gap-6 z-10 pt-24 md:pt-0">
         <h1 className="text-white title">
           Pioneering Safety &nbsp;
           <br className="hidden md:block" />
