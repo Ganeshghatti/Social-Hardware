@@ -7,23 +7,23 @@ import Card5 from "../../../../public/assets/images/functionalities/section-5-te
 
 const cardsData = [
   {
-    text: "Eclipse Remote Systems are AR-controlled teleoperated robots designed to improve workplace safety and operational efficiency in high-risk environments. With advanced sensor technology, Eclipse minimizes human exposure to danger while delivering precise, actionable insights that drive smarter decision-making. With unparalleled adaptability, Eclipse is paving the way for safer, more effective workflows.",
+    text: "We build AR-controlled telerobots to enhance workplace safety and efficiency in high-risk environments. Eclipse reduces human risk with advanced sensors and delivers precise, actionable insights.",
     image: Card1,
   },
   {
-    text: "Equipped with advanced gesture-based sensory technology, Eclipse minimizes human exposure to danger by enabling precise teleoperated control during critical tasks. The cutting-edge user feedback system allows operators to feel and interact with the environment remotely, ensuring accurate and safe operations.",
+    text: "Equipped with gesture-based sensory tech, Eclipse minimizes human risk by enabling precise teleoperation. The feedback system allows real-time interaction for accurate and safe operations in critical tasks.",
     image: Card2,
   },
   {
-    text: "Eclipse Remote Systems use mesh networking to significantly enhance performance during operations in hazardous scenarios. The network enables seamless communication across multiple devices, ensuring reliable connections even in compromised environments. Each node relays data, allowing coverage of large or obstructed areas like collapsed buildings or rugged terrains while maintaining stable communication.",
+    text: "Eclipse Remote Systems use mesh networking for stable communication in hazardous areas. Each node relays data, ensuring reliable control and coverage over large or obstructed environments.",
     image: Card3,
   },
   {
-    text: "Provides operators with access to a variety of quick-change attachments that can be tailored to the mission's specific needs. Standard tools include biomechanical hands for delicate manipulations, a precision gripper for secure handling of objects, a disc cutter for cutting through debris, and a metal detector for identifying hazardous materials or structural elements.",
+    text: "Operators can use quick-change attachments tailored to mission needs, including biomechanical hands, precision grippers, disc cutters, and metal detectors for handling delicate or hazardous tasks.",
     image: Card4,
   },
   {
-    text: "Built for versatility, Eclipse Remote Systems seamlessly adapt to a wide range of operational environments, from disaster zones to military operations. Their user-friendly, intuitive interface reduces the need for extensive training, allowing for quick deployment and immediate integration into existing workflows. This makes it an ideal solution for organizations looking to enhance operational capabilities without disrupting established processes.",
+    text: "Eclipse Remote Systems adapt to diverse environments, from disaster zones to industrial sites. Their intuitive interface reduces training time, enabling quick deployment and seamless integration into existing workflows.",
     image: Card5,
   },
 ];
