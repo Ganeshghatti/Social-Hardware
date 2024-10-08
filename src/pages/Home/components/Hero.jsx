@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="w-[95%] md:w-[53%] z-10">
         <img src={heroimg} alt="hero" className="w-full h-auto object-cover  md:pt-28" />
       </div>
-      <div className="w-full text-center md:text-left md:w-[42%] relative md:absolute md:left-[4%] md:transform md:translate-y-[50%] content flex flex-col gap-6 z-10">
+      <div className="w-full text-center md:text-left md:w-[42%] relative md:absolute md:left-[4%] md:transform md:translate-y-[50%] content flex flex-col gap-6 z-10 pt-24">
         <h1 className="text-white title">
           Pioneering Safety &nbsp;
           <br className="hidden md:block" />
@@ -28,7 +28,7 @@ export default function Hero() {
           risk, and achieve more with Eclipse Remote Systems.
         </p>
       </div>
-      <p className="ph-desc md:hidden absolute bottom-[4%] left-0 w-[90%] z-10 pl-[4%]">
+      <p className="ph-desc md:hidden absolute bottom-[4%] left-0 w-[95%] z-10 pl-[4%]">
         Our cutting-edge teleoperated robots allow you to manage hazardous
         operations remotely, keeping your workforce safe. With real-time data
         insights and advanced situational awareness, you maintain precise

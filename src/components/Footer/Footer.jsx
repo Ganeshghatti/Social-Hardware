@@ -36,7 +36,7 @@ export default function Footer() {
             </li>
           ))}
         </ul>
-        <div className="flex items-center justify-center gap-4">
+        <span className="flex items-center justify-center gap-4">
           <a
             href="https://www.linkedin.com/company/social-hardware/"
             target="_blank"
@@ -53,10 +53,10 @@ export default function Footer() {
           >
             <FaXTwitter size={24} />
           </a>
-        </div>
+        </span>
       </div>
       <div className="flex w-full justify-center items-center py-5">
-        <p className="text-white text-sm md:text-base">
+        <p className="text-white text-sm md:text-base text-center">
           © 2024 Social Hardware International Pvt. Ltd. All rights reserved
         </p>
       </div>
