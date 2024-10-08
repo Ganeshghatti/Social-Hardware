@@ -28,7 +28,7 @@ export default function Hero() {
           risk, and achieve more with Eclipse Remote Systems.
         </p>
       </div>
-      <p className="ph-desc md:hidden absolute bottom-[4%] left-0 w-[95%] z-10 pl-[4%]">
+      <p className="ph-desc md:hidden absolute bottom-[2%] left-0 w-[95%] z-10 pl-[4%]">
         Our cutting-edge teleoperated robots allow you to manage hazardous
         operations remotely, keeping your workforce safe. With real-time data
         insights and advanced situational awareness, you maintain precise

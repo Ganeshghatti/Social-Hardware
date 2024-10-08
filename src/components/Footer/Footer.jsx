@@ -57,7 +57,8 @@ export default function Footer() {
       </div>
       <div className="flex w-full justify-center items-center py-5">
         <p className="text-white text-sm md:text-base text-center">
-          © 2024 Social Hardware International Pvt. Ltd. All rights reserved
+          © 2024 Social Hardware International Pvt. Ltd.
+          <br className="md:hidden" /> All rights reserved
         </p>
       </div>
     </footer>
