@@ -1,8 +1,8 @@
 import React from "react";
 import TitleComponent from "../../../components/TitleComponent";
-import { AugmentedRealityControl } from "../../../components/AugmentedRealityControl";
-import { ModularToolAttachments } from "../../../components/ModularToolAttachments";
-import { MeshNetworkCommunication } from "../../../components/MeshNetworkCommunication";
+import { AugmentedRealityControl } from "../../../components/ThreeD/AugmentedRealityControl";
+import { ModularToolAttachments } from "../../../components/ThreeD/ModularToolAttachments";
+import { MeshNetworkCommunication } from "../../../components/ThreeD/MeshNetworkCommunication";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
@@ -42,8 +42,8 @@ export default function Features() {
       params: ["UP TO 1.5 KM RANGE", "ROBUST  DATA TRANSMISSION"],
       model: {
         component: MeshNetworkCommunication,
-        scale: [10, 10, 10],
-        position: [0.25, -1.75, 0],
+        scale: [3, 3, 3],
+        position: [0.25, -2.25, 0],
         rotation: [0, 0, 0],
       },
     },
@@ -94,7 +94,7 @@ export default function Features() {
                     <OrbitControls enableZoom={false} enablePan={false} enableDamping={false}/>
                     <ambientLight intensity={5} />
                     <pointLight position={[10, 10, 10]} intensity={1} />
-                  </Canvas>{" "}
+                  </Canvas>
                 </div>
                 {index === cardData.length - 1 && (
                   <div

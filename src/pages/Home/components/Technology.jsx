@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
 import TitleComponent from "../../../components/TitleComponent";
 import { Canvas } from "@react-three/fiber";
-import { EclipseRobot } from "../../../components/EclipseRobot";
+import { EclipseRobot } from "../../../components/ThreeD/EclipseRobot";
 import { OrbitControls } from "@react-three/drei";
+import Loader from "../../../components/Loader/Loader";
 
 export default function Technology() {
   const carouselData = [
     "Operators control the Eclipse Series robots using an augmented reality interface, providing an immersive, real-time experience. This level of control allows for unparalleled precision, making it ideal for high-stakes missions where every action counts.",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis placeat architecto ullam molestiae, natus officia aspernatur iusto, iure aliquam error ipsum veniam animi incidunt consectetur libero nihil velit minima fugiat!",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis placeat architecto ullam molestiae, natus officia aspernatur iusto, iure aliquam error ipsum veniam animi incidunt consectetur libero nihil velit minima fugiat!",
+    "The Eclipse Remote Systems advance Social Hardware's mission to improve safety and efficiency in hazardous environments. These teleoperated robots are engineered for high-risk tasks and industrial operations, reducing human exposure to danger.",
+    "Our systems are easy to use, even for non-technical operators. The intuitive interface and advanced sensory capabilities extend beyond human perception, making it accessible and efficient with minimal training.",
+    "Eclipse integrates IoT and AI-enhanced data collection, offering unmatched insights for smarter decision-making. Fully customizable, it coordinates multiple units, ideal for large-scale operations and seamless team collaboration."
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -93,7 +95,7 @@ export default function Technology() {
           </button>
         </div>
       </div>
-      <div className="threeD-container block md:absolute left-[39%] w-11/12 md:w-[45%] h-[50vh] md:h-full top-0 z-10">
+      <div className="threeD-container block md:absolute left-[39%] w-11/12 md:w-[45%] self-start h-[50vh] top-0 z-10">
         <Canvas style={{ background: "transparent" }}>
           <EclipseRobot
             scale={[4, 4, 4]}
