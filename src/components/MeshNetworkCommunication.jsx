@@ -58,7 +58,7 @@ export function MeshNetworkCommunication(props) {
             <mesh geometry={nodes.Body1008.geometry} material={materials['Paint - Metallic (Dark Grey)']} scale={10} />
           </group>
         </group>
-        <mesh geometry={nodes.Body2001.geometry} material={materials['Paint - Metallic (Silver)']} scale={10} />
+        <mesh geometry={nodes.Body2001.geometry} material={materials['Material.003']} scale={10} />
       </group>
     </group>
   )

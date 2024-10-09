@@ -16,8 +16,8 @@ export default function Features() {
       params: ["5MS LATENCY", "REAL-TIME DATA OVERLAY"],
       model: {
         component: AugmentedRealityControl,
-        scale: [5, 5, 5],
-        position: [0.25, -1.75, 0],
+        scale: [5.5, 5.5, 5.5],
+        position: [0.25, -1, 0],
         rotation: [0, 0, 0],
       },
     },
@@ -29,8 +29,8 @@ export default function Features() {
       params: [" DUAL 10-DOF ARMS", "NO REBOOT NEEDED"],
       model: {
         component: ModularToolAttachments,
-        scale: [10, 10, 10],
-        position: [0.25, -1.75, 0],
+        scale: [8, 8, 8],
+        position: [0.25, -2.5, 0],
         rotation: [0, 0, 0],
       },
     },
@@ -84,14 +84,14 @@ export default function Features() {
                   alt={card.title}
                   className="w-full md:w-1/2 z-10"
                 /> */}
-                <div className="w-full md:w-1/2 h-[40vh]">
+                <div className="w-full md:w-1/2 h-[40vh] md:h-[50vh] z-50">
                   <Canvas style={{ background: "transparent" }}>
                     <card.model.component
                       scale={card.model.scale}
                       position={card.model.position}
                       rotation={card.model.rotation}
                     />
-                    <OrbitControls enableZoom={true} enablePan={true} enableDamping={false}/>
+                    <OrbitControls enableZoom={false} enablePan={false} enableDamping={false}/>
                     <ambientLight intensity={5} />
                     <pointLight position={[10, 10, 10]} intensity={1} />
                   </Canvas>{" "}

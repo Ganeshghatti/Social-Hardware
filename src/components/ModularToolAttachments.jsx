@@ -10,68 +10,54 @@ export function ModularToolAttachments(props) {
   const { nodes, materials } = useGLTF('../../../assets/ThreeD/ModularToolAttachments.glb')
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.Body32.geometry} material={materials.texture_2} position={[0.181, 0.346, 0.355]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body36.geometry} material={materials.texture_2} position={[0.181, 0.346, -0.254]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body56.geometry} material={materials.texture_2} position={[-0.178, 0.346, -0.254]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body60.geometry} material={materials.texture_2} position={[-0.178, 0.346, 0.355]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body76.geometry} material={materials.texture_2} position={[-0.178, 0.068, 0.285]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body78.geometry} material={materials.texture_2} position={[0.181, 0.068, 0.285]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body110.geometry} material={materials.texture_2} position={[0.191, 0.069, 0.287]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body113.geometry} material={materials.texture_2} position={[-0.189, 0.069, 0.287]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body6001.geometry} material={materials.texture_2} position={[-0.186, 0.286, -0.363]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body10001.geometry} material={materials.texture_2} position={[0.188, 0.286, -0.363]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body15001.geometry} material={materials.texture_2} position={[-0.186, 0.346, -0.269]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body16001.geometry} material={materials.texture_2} position={[-0.186, 0.345, -0.284]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body8002.geometry} material={materials.texture_2} position={[-0.186, 0.344, 0.382]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <group position={[0.562, 0.594, 0.361]} rotation={[0, -0.262, 0]}>
-        <mesh geometry={nodes['Body1_(1)002'].geometry} material={materials.texture} />
-        <mesh geometry={nodes['Body1_(1)002_1'].geometry} material={materials.Steel} />
-        <mesh geometry={nodes['Body1_(1)002_2'].geometry} material={materials.black_metal} />
-        <group position={[0.069, 0.083, 0.064]} rotation={[-0.609, -0.001, 0.004]} scale={0.001}>
-          <mesh geometry={nodes.body2002_1.geometry} material={materials.texture} />
-          <mesh geometry={nodes.body2002_2.geometry} material={materials.Steel} />
-          <mesh geometry={nodes.body2002_3.geometry} material={materials.black_metal} />
-          <mesh geometry={nodes.body2002_4.geometry} material={materials['Material.001']} />
-          <group position={[-33.7, 305, 0]} rotation={[0.018, 0, 0]}>
-            <mesh geometry={nodes.body4_002_1.geometry} material={materials.texture} />
-            <mesh geometry={nodes.body4_002_2.geometry} material={materials.Steel} />
-            <mesh geometry={nodes.body4_002_3.geometry} material={materials.black_metal_1} />
-            <group position={[-36.2, 0, 41.341]} rotation={[-0.083, 0.028, -0.031]}>
-              <mesh geometry={nodes.body4_003_1.geometry} material={materials.texture} />
-              <mesh geometry={nodes.body4_003_2.geometry} material={materials.black_metal} />
-              <group position={[15.718, 0, 182.3]} rotation={[-0.044, -0.001, 0.001]}>
-                <mesh geometry={nodes.body5002_1.geometry} material={materials.texture} />
-                <mesh geometry={nodes.body5002_2.geometry} material={materials.black_metal} />
-                <mesh geometry={nodes.body5002_3.geometry} material={materials['Steel - Satin.001']} />
-                <mesh geometry={nodes.Body109001.geometry} material={materials.black_metal_1} position={[15.194, -15.546, 50.107]} rotation={[-0.629, 0, 0]} />
-                <group position={[-17.303, -36.815, 45.031]} rotation={[-0.629, 0, 0]}>
-                  <mesh geometry={nodes.box_pcb001_1.geometry} material={materials.texture} />
-                  <mesh geometry={nodes.box_pcb001_2.geometry} material={materials.orange} />
-                  <mesh geometry={nodes.box_pcb001_3.geometry} material={materials.black_metal_1} />
-                </group>
-                <mesh geometry={nodes.jaw_2001.geometry} material={materials.black_metal_1} position={[-7.008, -152.807, 113.992]} rotation={[-0.629, 0, 0]} />
-                <mesh geometry={nodes.logo_cap001.geometry} material={materials.texture} position={[-20.788, -17.107, 59.707]} rotation={[-0.629, 0, 0]} />
-                <mesh geometry={nodes.logo_scale001.geometry} material={materials.orange} position={[-19.83, -14.006, 63.532]} rotation={[-0.629, 0, 0]} />
-                <mesh geometry={nodes.servo_cap001.geometry} material={materials.black_metal_1} position={[-32.362, -59.225, 38.932]} rotation={[-0.629, 0, 0]}>
-                  <mesh geometry={nodes.Body1003.geometry} material={materials.black_metal_1} position={[5.079, -100.03, 0.436]} />
-                  <mesh geometry={nodes.jaw_1001.geometry} material={materials.black_metal_1} position={[-17.628, -119.832, -5.36]} />
-                  <mesh geometry={nodes.shaft_b001.geometry} material={materials.Steel} position={[0.005, -42.08, 0.025]} />
-                </mesh>
-                <mesh geometry={nodes['servo_real_(1)001'].geometry} material={materials['Opaque(245,245,246)']} position={[-23.248, -46.62, 29.687]} rotation={[-0.629, 0, 0]} />
-                <mesh geometry={nodes.servo_real001.geometry} material={materials.black_metal_1} position={[-23.247, -117.885, 82]} rotation={[-0.629, 0, 0]} />
-                <mesh geometry={nodes.shaft_a001.geometry} material={materials.Steel} position={[-32.362, -70.91, 47.429]} rotation={[-0.629, 0, 0]} />
-                <mesh geometry={nodes['SLIP_RING_HOLDER_(1)001'].geometry} material={materials.black_metal_1} position={[-23.292, -63.312, 46.526]} rotation={[-0.629, 0, 0]} />
-                <mesh geometry={nodes.SLIP_RING001.geometry} material={materials.Steel} position={[-32.362, -76.568, 51.584]} rotation={[-0.629, 0, 0]} />
-                <mesh geometry={nodes.TOP_servo_cap001.geometry} material={materials.black_metal_1} position={[-22.873, -35.177, 20.365]} rotation={[-0.629, 0, 0]} />
-                <mesh geometry={nodes.tpu_cover001.geometry} material={materials.black_metal_1} position={[-2.369, -170.34, 119.949]} rotation={[-0.629, 0, 0]} />
-              </group>
-            </group>
-          </group>
-          <mesh geometry={nodes.Curve003.geometry} material={materials.orange} position={[19.05, 281.868, 0.5]} scale={1000} />
-        </group>
+      <group position={[0.001, 0.084, 0]} rotation={[0, -0.262, 0]}>
+        <mesh geometry={nodes['Body1_(1)001'].geometry} material={materials['texture.001']} />
+        <mesh geometry={nodes['Body1_(1)001_1'].geometry} material={materials['Steel.001']} />
+        <mesh geometry={nodes['Body1_(1)001_2'].geometry} material={materials['black_metal.001']} />
       </group>
+      <group position={[0.051, 0.166, 0.08]} rotation={[-0.625, -0.215, -0.148]} scale={0.001}>
+        <mesh geometry={nodes.body2001.geometry} material={materials['texture.001']} />
+        <mesh geometry={nodes.body2001_1.geometry} material={materials['Steel.001']} />
+        <mesh geometry={nodes.body2001_2.geometry} material={materials['black_metal.001']} />
+        <mesh geometry={nodes.body2001_3.geometry} material={materials['Material.002']} />
+      </group>
+      <group position={[0.063, 0.416, -0.097]} rotation={[-0.607, -0.217, -0.144]} scale={0.001}>
+        <mesh geometry={nodes.body4_001.geometry} material={materials['texture.001']} />
+        <mesh geometry={nodes.body4_001_1.geometry} material={materials['Steel.001']} />
+        <mesh geometry={nodes.body4_001_2.geometry} material={materials['black_metal_1.001']} />
+      </group>
+      <group position={[0.019, 0.439, -0.074]} rotation={[-0.686, -0.177, -0.192]} scale={0.001}>
+        <mesh geometry={nodes.body4_004.geometry} material={materials['texture.001']} />
+        <mesh geometry={nodes.body4_004_1.geometry} material={materials['black_metal.001']} />
+      </group>
+      <group position={[0.002, 0.552, 0.069]} rotation={[-0.73, -0.17, -0.198]} scale={0.001}>
+        <mesh geometry={nodes.body5001.geometry} material={materials['texture.001']} />
+        <mesh geometry={nodes.body5001_1.geometry} material={materials['black_metal.001']} />
+        <mesh geometry={nodes.body5001_2.geometry} material={materials['Steel - Satin.002']} />
+      </group>
+      <mesh geometry={nodes.Body109001.geometry} material={materials['black_metal_1.001']} position={[0.005, 0.573, 0.12]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <group position={[-0.03, 0.555, 0.121]} rotation={[-1.345, -0.022, -0.259]} scale={0.001}>
+        <mesh geometry={nodes.box_pcb002.geometry} material={materials['texture.001']} />
+        <mesh geometry={nodes.box_pcb002_1.geometry} material={materials['orange.001']} />
+        <mesh geometry={nodes.box_pcb002_2.geometry} material={materials['black_metal_1.001']} />
+      </group>
+      <mesh geometry={nodes.jaw_2001.geometry} material={materials['black_metal_1.001']} position={[-0.054, 0.512, 0.247]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <mesh geometry={nodes.logo_cap001.geometry} material={materials['texture.001']} position={[-0.032, 0.579, 0.119]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <mesh geometry={nodes.logo_scale001.geometry} material={materials['orange.001']} position={[-0.031, 0.584, 0.12]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <mesh geometry={nodes.servo_cap001.geometry} material={materials['black_metal_1.001']} position={[-0.048, 0.534, 0.127]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <mesh geometry={nodes.Body1003.geometry} material={materials['black_metal_1.001']} position={[-0.068, 0.512, 0.222]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <mesh geometry={nodes.jaw_1001.geometry} material={materials['black_metal_1.001']} position={[-0.095, 0.503, 0.234]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <mesh geometry={nodes.shaft_b001.geometry} material={materials['Steel.001']} position={[-0.058, 0.525, 0.167]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <mesh geometry={nodes['servo_real_(1)001'].geometry} material={materials['Opaque(245,245,246).001']} position={[-0.035, 0.537, 0.115]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <mesh geometry={nodes.servo_real001.geometry} material={materials['black_metal_1.001']} position={[-0.057, 0.518, 0.198]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <mesh geometry={nodes.shaft_a001.geometry} material={materials['Steel.001']} position={[-0.051, 0.531, 0.141]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <mesh geometry={nodes['SLIP_RING_HOLDER_(1)001'].geometry} material={materials['black_metal_1.001']} position={[-0.041, 0.536, 0.137]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <mesh geometry={nodes.SLIP_RING001.geometry} material={materials['Steel.001']} position={[-0.053, 0.53, 0.147]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <mesh geometry={nodes.TOP_servo_cap001.geometry} material={materials['black_metal_1.001']} position={[-0.031, 0.54, 0.101]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <mesh geometry={nodes.tpu_cover001.geometry} material={materials['black_metal_1.001']} position={[-0.054, 0.503, 0.264]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
+      <mesh geometry={nodes.Curve003.geometry} material={materials['orange.001']} position={[0.11, 0.398, -0.071]} rotation={[-0.625, -0.215, -0.148]} />
     </group>
   )
 }
 
-useGLTF.preload('../../../assets/ThreeD/ModularToolAttachments.glb')
+useGLTF.preload('../../../assets/ThreeD//ModularToolAttachments.glb')
