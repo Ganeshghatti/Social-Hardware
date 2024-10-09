@@ -1,8 +1,10 @@
 import React from "react";
 import TitleComponent from "../../../components/TitleComponent";
-import feature1 from "../../../../public/assets/images/feature1.png";
-import feature2 from "../../../../public/assets/images/feature2.png";
-import feature3 from "../../../../public/assets/images/feature3.png";
+import { AugmentedRealityControl } from "../../../components/AugmentedRealityControl";
+import { ModularToolAttachments } from "../../../components/ModularToolAttachments";
+import { MeshNetworkCommunication } from "../../../components/MeshNetworkCommunication";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 
 export default function Features() {
   const cardData = [
@@ -12,7 +14,12 @@ export default function Features() {
       description:
         "Operators use an AR interface for immersive, real-time control, enhancing situational awareness and precision.",
       params: ["5MS LATENCY", "REAL-TIME DATA OVERLAY"],
-      image: feature1,
+      model: {
+        component: AugmentedRealityControl,
+        scale: [5, 5, 5],
+        position: [0.25, -1.75, 0],
+        rotation: [0, 0, 0],
+      },
     },
     {
       index: "02",
@@ -20,7 +27,12 @@ export default function Features() {
       description:
         "Eclipse's modular tool system allows quick adaptation to diverse industrial tasks, from handling hazardous materials to complex operations, offering versatile solutions.",
       params: [" DUAL 10-DOF ARMS", "NO REBOOT NEEDED"],
-      image: feature2,
+      model: {
+        component: ModularToolAttachments,
+        scale: [10, 10, 10],
+        position: [0.25, -1.75, 0],
+        rotation: [0, 0, 0],
+      },
     },
     {
       index: "03",
@@ -28,14 +40,19 @@ export default function Features() {
       description:
         "Advanced mesh networking technology allows operators to control the system without direct line of sight. This ensures reliable communication in confined or obstructed environments.",
       params: ["UP TO 1.5 KM RANGE", "ROBUST  DATA TRANSMISSION"],
-      image: feature3,
+      model: {
+        component: MeshNetworkCommunication,
+        scale: [10, 10, 10],
+        position: [0.25, -1.75, 0],
+        rotation: [0, 0, 0],
+      },
     },
   ];
 
   const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
+    const contactSection = document.getElementById("contact");
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -45,12 +62,10 @@ export default function Features() {
         title="Features"
         styles={"absolute left-[4vw] h-fit top-[2vh]"}
       />
-      <div className="cards-parent-container  flex flex-col w-full mt-16 md:mt-32">
+      <div className="cards-parent-container relative flex flex-col w-full mt-16 md:mt-32">
         {cardData.map((card, index) => (
-          <div className="cards-container " key={index}>
-            <div
-              className="card  w-[80%] ml-[4%] relative z-10 flex flex-col md:flex-row justify-end items-center pt-6 md:pt-0"
-            >
+          <div className="cards-container" key={index}>
+            <div className="card w-[80%] ml-[4%] relative z-10 flex flex-col md:flex-row justify-end items-center pt-6 md:pt-0">
               <div className="card-left  w-full md:w-1/3 flex flex-col gap-4 md:absolute left-0">
                 <p className="index w-fit">{card.index}</p>
                 <p className="title">{card.title}</p>
@@ -63,14 +78,26 @@ export default function Features() {
                       {param}
                     </p>
                   ))}
-                </div>{" "}
-                <img
+                </div>
+                {/* <img
                   src={card.image}
                   alt={card.title}
                   className="w-full md:w-1/2 z-10"
-                />
+                /> */}
+                <div className="w-full md:w-1/2 h-[40vh]">
+                  <Canvas style={{ background: "transparent" }}>
+                    <card.model.component
+                      scale={card.model.scale}
+                      position={card.model.position}
+                      rotation={card.model.rotation}
+                    />
+                    <OrbitControls enableZoom={true} enablePan={true} enableDamping={false}/>
+                    <ambientLight intensity={5} />
+                    <pointLight position={[10, 10, 10]} intensity={1} />
+                  </Canvas>{" "}
+                </div>
                 {index === cardData.length - 1 && (
-                  <div 
+                  <div
                     className="flex gap-4 right-0 get-a-trial block md:absolute justify-center md:justify-end bottom-0 w-1/2 cursor-pointer"
                     onClick={scrollToContact}
                   >

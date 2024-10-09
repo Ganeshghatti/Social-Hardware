@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import validator from "validator";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import ClipLoader from 'react-spinners/ClipLoader';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -10,6 +13,7 @@ export default function Contact() {
     message: "",
   });
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -28,22 +32,33 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+
     if (validateForm()) {
       try {
-        await emailjs.send(
-          "YOUR_SERVICE_ID",
-          "YOUR_TEMPLATE_ID",
-          formData,
-          "YOUR_USER_ID"
-        );
-        alert("Message sent successfully!");
-        setFormData({ name: "", email: "", phone: "", message: "" });
+        const response = await fetch('https://server.socialhardware.in/send_email.php', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: new URLSearchParams(formData),
+        });
+
+        if (response.ok) {
+          toast.success('Message sent successfully!');
+          setFormData({ name: '', email: '', phone: '', message: '' });
+        } else {
+          toast.error('Failed to send message. Please try again.');
+        }
       } catch (error) {
-        console.error("Error sending email:", error);
-        alert("Failed to send message. Please try again.");
+        console.error('Error sending email:', error);
+        toast.error('Failed to send message. Please try again.');
+      } finally {
+        setLoading(false);
       }
     }
   };
+
   const handleWhatsAppClick = () => {
     const phoneNumber = "9353586240";
     const whatsappUrl = `https://wa.me/${phoneNumber}`;
@@ -218,6 +233,12 @@ export default function Contact() {
             Message us on WhatsApp
           </button>
         </form>
+        {loading && (
+          <div style={loaderStyle}>
+            <ClipLoader color="#3498db" loading={loading} size={150} />
+          </div>
+        )}
+        <ToastContainer />
       </div>
       <div className="right-container" />
       <div className="line-v-1" />
@@ -225,3 +246,16 @@ export default function Contact() {
     </section>
   );
 }
+
+const loaderStyle = {
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: '100%',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundColor: 'rgba(255, 255, 255, 0.8)',
+  zIndex: 1000,
+};

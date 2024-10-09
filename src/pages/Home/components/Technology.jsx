@@ -33,7 +33,10 @@ export default function Technology() {
   };
 
   return (
-    <section id="technology" className="relative py-8 flex md:items-center flex-col md:flex-row w-full">
+    <section
+      id="technology"
+      className="relative py-8 flex md:items-center flex-col md:flex-row w-full"
+    >
       <TitleComponent
         title="Technology"
         styles={"absolute left-[4vw] top-[2vh]"}
@@ -90,10 +93,20 @@ export default function Technology() {
           </button>
         </div>
       </div>
-      <div className="threeD-container block md:absolute left-[39%] w-11/12 md:w-[45%] h-auto md:h-full top-0 z-10">
-        <Canvas style={{ background: 'transparent' }}>
-          <EclipseRobot scale={[3, 3, 3]} position={[0, -1.5, 0]} />
-          <OrbitControls enableZoom={false} enablePan={false} />
+      <div className="threeD-container block md:absolute left-[39%] w-11/12 md:w-[45%] h-[50vh] md:h-full top-0 z-10">
+        <Canvas style={{ background: "transparent" }}>
+          <EclipseRobot
+            scale={[4, 4, 4]}
+            position={
+              window.innerWidth <= 768 ? [0.25, -1.75, 0] : [0, -1.75, 0]
+            }
+            rotation={[0, -0.4, 0]}
+          />
+          <OrbitControls
+            enableZoom={false}
+            enablePan={false}
+            enableDamping={false}
+          />
           <ambientLight intensity={3} />
           <pointLight position={[10, 10, 10]} intensity={1} />
         </Canvas>

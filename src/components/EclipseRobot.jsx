@@ -10,11 +10,11 @@ export function EclipseRobot(props) {
   const { nodes, materials } = useGLTF('../../../assets/ThreeD/EclipseRobot.glb')
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.canopy_top.geometry} material={materials.black_metal_1} position={[0.021, 0.823, -0.286]} scale={0.001} />
+      <mesh geometry={nodes.canopy_top.geometry} material={materials.texture} position={[0.021, 0.823, -0.286]} scale={0.001} />
       <mesh geometry={nodes.canopy_right.geometry} material={materials.texture} position={[0.375, 0.603, -0.279]} scale={0.001} />
       <mesh geometry={nodes.canopy_left.geometry} material={materials.texture} position={[-0.375, 0.603, -0.279]} scale={0.001} />
-      <mesh geometry={nodes.canopy_front_1.geometry} material={materials.black_metal_1} position={[0.002, 0.519, -0.108]} scale={0.001} />
-      <mesh geometry={nodes.canopy_front_2.geometry} material={materials.black_metal_1} position={[0, 0.755, -0.108]} scale={0.001} />
+      <mesh geometry={nodes.canopy_front_1.geometry} material={materials.texture} position={[0.002, 0.519, -0.108]} scale={0.001} />
+      <mesh geometry={nodes.canopy_front_2.geometry} material={materials.texture} position={[0, 0.755, -0.108]} scale={0.001} />
       <mesh geometry={nodes.Body12.geometry} material={materials.texture} position={[-0.001, 0.745, -0.438]} scale={0.001} />
       <mesh geometry={nodes.Body13.geometry} material={materials.texture} position={[-0.007, 0.511, -0.438]} scale={0.001} />
       <mesh geometry={nodes.Body14.geometry} material={materials.black_metal_1} position={[0, 0.746, -0.373]} scale={0.001} />
@@ -101,7 +101,7 @@ export function EclipseRobot(props) {
       <mesh geometry={nodes.Body113.geometry} material={materials.texture_2} position={[-0.189, 0.069, 0.287]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body114.geometry} material={materials.texture_2} position={[0.181, 0.347, 0.034]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body115.geometry} material={materials.texture_2} position={[0.191, 0.149, 0.019]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body116.geometry} material={materials.texture_2} position={[0.001, 0.067, -0.271]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
+      <mesh geometry={nodes.Body116.geometry} material={materials['military green']} position={[0.001, 0.067, -0.271]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body117.geometry} material={materials.texture_2} position={[-0.187, 0.345, 0.05]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body118.geometry} material={materials.texture_2} position={[0.189, 0.345, 0.05]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body119.geometry} material={materials.texture_2} position={[-0.187, 0.069, -0.04]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
@@ -132,7 +132,7 @@ export function EclipseRobot(props) {
       <mesh geometry={nodes.Body20001.geometry} material={materials.texture_2} position={[0.001, 0.285, -0.361]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body21001.geometry} material={materials.texture_2} position={[0.001, 0.344, -0.284]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body22001.geometry} material={materials.texture_2} position={[0.001, 0.347, -0.269]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body23001.geometry} material={materials.texture_2} position={[-0.011, 0.19, -0.365]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
+      <mesh geometry={nodes.Body23001.geometry} material={materials['military green']} position={[-0.011, 0.19, -0.365]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body24001.geometry} material={materials.texture_2} position={[0.001, 0.317, -0.324]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body25001.geometry} material={materials.texture_2} position={[0.001, 0.286, -0.364]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body26001.geometry} material={materials.texture_2} position={[0.001, 0.347, -0.285]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
@@ -162,8 +162,8 @@ export function EclipseRobot(props) {
       <mesh geometry={nodes.Body16002.geometry} material={materials.texture_2} position={[0.001, 0.343, 0.381]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body17002.geometry} material={materials.texture_2} position={[0.001, 0.178, 0.382]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body18002.geometry} material={materials.texture_2} position={[0.001, 0.347, 0.367]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body19002.geometry} material={materials.texture_2} position={[0.001, 0.26, 0.385]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
-      <mesh geometry={nodes.Body20002.geometry} material={materials.texture_2} position={[0.001, 0.121, 0.335]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
+      <mesh geometry={nodes.Body19002.geometry} material={materials.Material} position={[0.001, 0.26, 0.385]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
+      <mesh geometry={nodes.Body20002.geometry} material={materials.Material} position={[0.001, 0.121, 0.335]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body21002.geometry} material={materials.texture_2} position={[0.001, 0.345, 0.383]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body22002.geometry} material={materials.texture_2} position={[0.001, 0.177, 0.385]} rotation={[Math.PI / 2, 0, Math.PI / 2]} />
       <mesh geometry={nodes.Body1008.geometry} material={materials['Opaque(255,255,255)']} position={[0.089, 0.127, -0.302]} rotation={[1.733, 0, Math.PI / 2]} scale={0.001} />
@@ -379,59 +379,17 @@ export function EclipseRobot(props) {
         <mesh geometry={nodes['base_plate_(1)_1'].geometry} material={materials.texture} />
         <mesh geometry={nodes['base_plate_(1)_2'].geometry} material={materials.black_metal} />
       </group>
-      <group position={[0.299, 0.402, 0.157]} scale={0.001}>
-        <mesh geometry={nodes.Body2019.geometry} material={materials.texture} />
-        <mesh geometry={nodes.Body2019_1.geometry} material={materials.black_metal} />
-      </group>
-      <group position={[-0.301, 0.402, 0.157]} scale={0.001}>
-        <mesh geometry={nodes.Body2019.geometry} material={materials.texture} />
-        <mesh geometry={nodes.Body2019_1.geometry} material={materials.black_metal} />
-      </group>
-      <group position={[0.3, 0.448, 0.293]} rotation={[0, -0.262, 0]}>
-        <mesh geometry={nodes['Body1_(1)'].geometry} material={materials.texture} />
-        <mesh geometry={nodes['Body1_(1)_1'].geometry} material={materials.Steel} />
-        <mesh geometry={nodes['Body1_(1)_2'].geometry} material={materials.black_metal} />
-      </group>
-      <group position={[0.35, 0.53, 0.373]} rotation={[-0.625, -0.215, -0.148]} scale={0.001}>
-        <mesh geometry={nodes.body2001_1.geometry} material={materials.black_metal} />
-        <mesh geometry={nodes.body2001_2.geometry} material={materials.Steel} />
-        <mesh geometry={nodes.body2001_3.geometry} material={materials.Material} />
-        <mesh geometry={nodes.body2001_4.geometry} material={materials.texture} />
-      </group>
-      <group position={[-0.22, 0.53, 0.342]} rotation={[-0.459, 0.177, 0.087]} scale={0.001}>
-        <mesh geometry={nodes.body2001_1.geometry} material={materials.black_metal} />
-        <mesh geometry={nodes.body2001_2.geometry} material={materials.Steel} />
-        <mesh geometry={nodes.body2001_3.geometry} material={materials.Material} />
-        <mesh geometry={nodes.body2001_4.geometry} material={materials.texture} />
-      </group>
-      <group position={[0.362, 0.78, 0.195]} rotation={[-0.607, -0.217, -0.144]} scale={0.001}>
-        <mesh geometry={nodes.body4_001_1.geometry} material={materials.Steel} />
-        <mesh geometry={nodes.body4_001_2.geometry} material={materials.texture} />
-        <mesh geometry={nodes.body4_001_3.geometry} material={materials.black_metal_1} />
-      </group>
-      <group position={[-0.279, 0.805, 0.218]} rotation={[-0.459, 0.177, 0.087]} scale={0.001}>
-        <mesh geometry={nodes.body4_001_1.geometry} material={materials.Steel} />
-        <mesh geometry={nodes.body4_001_2.geometry} material={materials.texture} />
-        <mesh geometry={nodes.body4_001_3.geometry} material={materials.black_metal_1} />
-      </group>
-      <group position={[0.318, 0.803, 0.219]} rotation={[-0.686, -0.177, -0.192]} scale={0.001}>
-        <mesh geometry={nodes.body4_004_1.geometry} material={materials.black_metal} />
-        <mesh geometry={nodes.body4_004_2.geometry} material={materials.texture} />
-      </group>
-      <group position={[-0.307, 0.823, 0.262]} rotation={[-0.575, 0.166, 0.106]} scale={0.001}>
-        <mesh geometry={nodes.body4_004_1.geometry} material={materials.black_metal} />
-        <mesh geometry={nodes.body4_004_2.geometry} material={materials.texture} />
-      </group>
-      <group position={[0.301, 0.916, 0.362]} rotation={[-0.73, -0.17, -0.198]} scale={0.001}>
-        <mesh geometry={nodes.body5001_1.geometry} material={materials.texture} />
-        <mesh geometry={nodes.body5001_2.geometry} material={materials.black_metal} />
-        <mesh geometry={nodes.body5001_3.geometry} material={materials['Steel - Satin.001']} />
-      </group>
-      <group position={[-0.261, 0.92, 0.41]} rotation={[-0.678, 0.154, 0.123]} scale={0.001}>
-        <mesh geometry={nodes.body5001_1.geometry} material={materials.texture} />
-        <mesh geometry={nodes.body5001_2.geometry} material={materials.black_metal} />
-        <mesh geometry={nodes.body5001_3.geometry} material={materials['Steel - Satin.001']} />
-      </group>
+      <mesh geometry={nodes.Body2045.geometry} material={materials.texture} position={[0.299, 0.402, 0.157]} scale={0.001} />
+      <mesh geometry={nodes.Body2002.geometry} material={materials.texture} position={[-0.301, 0.402, 0.157]} scale={0.001} />
+      <mesh geometry={nodes['1_left'].geometry} material={materials.texture} position={[0.3, 0.448, 0.293]} rotation={[0, -0.262, 0]} />
+      <mesh geometry={nodes.body2001.geometry} material={materials.texture} position={[0.35, 0.53, 0.373]} rotation={[-0.625, -0.215, -0.148]} scale={0.001} />
+      <mesh geometry={nodes['2'].geometry} material={materials.texture} position={[-0.22, 0.53, 0.342]} rotation={[-0.459, 0.177, 0.087]} scale={0.001} />
+      <mesh geometry={nodes.body4_001.geometry} material={materials.texture} position={[0.362, 0.78, 0.195]} rotation={[-0.607, -0.217, -0.144]} scale={0.001} />
+      <mesh geometry={nodes.body4_005.geometry} material={materials.texture} position={[-0.279, 0.805, 0.218]} rotation={[-0.459, 0.177, 0.087]} scale={0.001} />
+      <mesh geometry={nodes.body4_004.geometry} material={materials.texture} position={[0.318, 0.803, 0.219]} rotation={[-0.686, -0.177, -0.192]} scale={0.001} />
+      <mesh geometry={nodes.body4_006.geometry} material={materials.texture} position={[-0.307, 0.823, 0.262]} rotation={[-0.575, 0.166, 0.106]} scale={0.001} />
+      <mesh geometry={nodes.body5001.geometry} material={materials.texture} position={[0.301, 0.916, 0.362]} rotation={[-0.73, -0.17, -0.198]} scale={0.001} />
+      <mesh geometry={nodes.body5004.geometry} material={materials.texture} position={[-0.261, 0.92, 0.41]} rotation={[-0.678, 0.154, 0.123]} scale={0.001} />
       <mesh geometry={nodes.Body109007.geometry} material={materials.black_metal_1} position={[0.304, 0.937, 0.413]} rotation={[-1.345, -0.022, -0.259]} scale={0.001} />
       <group position={[0.269, 0.919, 0.414]} rotation={[-1.345, -0.022, -0.259]} scale={0.001}>
         <mesh geometry={nodes.box_pcb.geometry} material={materials.black_metal_1} />
@@ -529,9 +487,9 @@ export function EclipseRobot(props) {
       <mesh geometry={nodes.front002.geometry} material={materials.texture} position={[0, 0.318, -0.446]} />
       <mesh geometry={nodes['driver_box_(1)'].geometry} material={materials.black_metal_1} position={[-0.308, 0.423, 0.051]} scale={0.001} />
       <group position={[-0.3, 0.448, 0.293]} rotation={[0, 0.197, 0]}>
-        <mesh geometry={nodes['Body1_(1)_3'].geometry} material={materials.texture} />
-        <mesh geometry={nodes['Body1_(1)_4'].geometry} material={materials.Steel} />
-        <mesh geometry={nodes['Body1_(1)_5'].geometry} material={materials.black_metal} />
+        <mesh geometry={nodes['Body1_(1)001'].geometry} material={materials.texture} />
+        <mesh geometry={nodes['Body1_(1)001_1'].geometry} material={materials.Steel} />
+        <mesh geometry={nodes['Body1_(1)001_2'].geometry} material={materials.black_metal} />
       </group>
       <group position={[-0.275, 0.914, 0.432]} rotation={[0.297, 0.188, -0.057]}>
         <mesh geometry={nodes.Body1076.geometry} material={materials['Procedural Stainless Steel']} />
@@ -554,20 +512,20 @@ export function EclipseRobot(props) {
       <mesh geometry={nodes.Body1066.geometry} material={materials['Procedural Stainless Steel']} position={[-0.232, 0.855, 0.593]} rotation={[0.421, 0.18, -0.08]} />
       <mesh geometry={nodes.Body1068.geometry} material={materials['Procedural Stainless Steel']} position={[-0.227, 0.846, 0.618]} rotation={[1.022, 0.104, -0.167]} />
       <group position={[-0.224, 0.826, 0.63]} rotation={[1.564, 0.001, -0.197]}>
-        <mesh geometry={nodes.Body1010_2.geometry} material={materials['Procedural Stainless Steel']} />
-        <mesh geometry={nodes.Body1010_3.geometry} material={materials['Material.003']} />
+        <mesh geometry={nodes.Body1007.geometry} material={materials['Procedural Stainless Steel']} />
+        <mesh geometry={nodes.Body1007_1.geometry} material={materials['Material.003']} />
       </group>
       <mesh geometry={nodes.Body1069.geometry} material={materials['Procedural Stainless Steel']} position={[-0.253, 0.855, 0.597]} rotation={[0.553, 0.168, -0.103]} />
       <mesh geometry={nodes.Body1071.geometry} material={materials['Procedural Stainless Steel']} position={[-0.248, 0.842, 0.621]} rotation={[0.85, 0.131, -0.147]} />
       <group position={[-0.244, 0.825, 0.636]} rotation={[1.388, 0.036, -0.193]}>
-        <mesh geometry={nodes.Body1010_4.geometry} material={materials['Procedural Stainless Steel']} />
-        <mesh geometry={nodes.Body1010_5.geometry} material={materials['Material.003']} />
+        <mesh geometry={nodes.Body1019.geometry} material={materials['Procedural Stainless Steel']} />
+        <mesh geometry={nodes.Body1019_1.geometry} material={materials['Material.003']} />
       </group>
       <mesh geometry={nodes.Body1072.geometry} material={materials['Procedural Stainless Steel']} position={[-0.273, 0.855, 0.601]} rotation={[0.451, 0.177, -0.085]} />
       <mesh geometry={nodes.Body1074.geometry} material={materials['Procedural Stainless Steel']} position={[-0.268, 0.845, 0.626]} rotation={[0.749, 0.145, -0.133]} />
       <group position={[-0.264, 0.829, 0.643]} rotation={[1.318, 0.05, -0.19]}>
-        <mesh geometry={nodes.Body1010_6.geometry} material={materials['Procedural Stainless Steel']} />
-        <mesh geometry={nodes.Body1010_7.geometry} material={materials['Material.003']} />
+        <mesh geometry={nodes.Body1023.geometry} material={materials['Procedural Stainless Steel']} />
+        <mesh geometry={nodes.Body1023_1.geometry} material={materials['Material.003']} />
       </group>
       <mesh geometry={nodes.Curve002.geometry} material={materials.orange} position={[-0.225, 0.784, 0.218]} rotation={[-0.459, 0.177, 0.087]} />
     </group>
