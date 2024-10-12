@@ -19,8 +19,8 @@ export default function Home() {
       <BlockComponent />
       <Technology />
       <BlockComponent />
-      <Video />
-      <BlockComponent />
+      {/* <Video />
+      <BlockComponent /> */}
       <Features />
       <BlockComponent />
       <Functionalities />

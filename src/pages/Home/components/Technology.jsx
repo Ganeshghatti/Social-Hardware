@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { EclipseRobot } from "../../../components/ThreeD/EclipseRobot";
 import { OrbitControls } from "@react-three/drei";
 import Loader from "../../../components/Loader/Loader";
+import EclipseRobotimg from "../../../../public/assets/images/EclipseRobot.png"
 
 export default function Technology() {
   const carouselData = [
@@ -95,7 +96,8 @@ export default function Technology() {
           </button>
         </div>
       </div>
-      <div className="threeD-container block md:absolute left-[39%] w-11/12 md:w-[45%] self-start h-[50vh] top-0 z-10">
+      <img src={EclipseRobotimg} alt="Eclipse Robot" className="block md:absolute right-[18%] w-[84%] md:w-[35%] self-start top-0 z-10" />
+      {/* <div className="threeD-container block md:absolute left-[39%] w-11/12 md:w-[45%] self-start h-[50vh] top-0 z-10">
         <Canvas style={{ background: "transparent" }}>
           <EclipseRobot
             scale={[4, 4, 4]}
@@ -112,7 +114,7 @@ export default function Technology() {
           <ambientLight intensity={3} />
           <pointLight position={[10, 10, 10]} intensity={1} />
         </Canvas>
-      </div>
+      </div> */}
       <div className="line-v-1" />
       <div className="line-v-3" />
     </section>
