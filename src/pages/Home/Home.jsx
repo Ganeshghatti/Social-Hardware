@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import "./Home.scss";
 import BlockComponent from "./components/BlockComponent";
 import Features from "./components/Features";
+import Features1 from "./components/Features1";
 import Partnerships from "./components/Partnerships";
 import FAQs from "./components/FAQs";
 import SectionIndicator from "../../components/SectionIndicator";
@@ -21,10 +22,10 @@ export default function Home() {
       <BlockComponent />
       {/* <Video />
       <BlockComponent /> */}
-      <Features />
+      <Features/>
       <BlockComponent />
-      <Functionalities />
-      <BlockComponent />
+      {/* <Functionalities />
+      <BlockComponent /> */}
       <FAQs />
       <BlockComponent />
       <Partnerships />

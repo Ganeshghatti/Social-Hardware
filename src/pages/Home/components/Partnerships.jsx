@@ -8,7 +8,7 @@ export default function Partnerships() {
       <div className="left-container">
         <TitleComponent
           title="Partnership"
-          styles={"absolute left-[4vw] top-[2vh]"}
+          styles={"absolute "}
         />
       </div>
       <div className="center-container">

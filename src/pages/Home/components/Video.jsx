@@ -7,7 +7,7 @@ export default function Video() {
     <section id="video" className="relative py-4 md:py-8 flex w-full">
       <TitleComponent
         title="Tech Demo"
-        styles={"absolute left-[4vw] top-[2vh]"}
+        styles={"absolute"}
       />
 
       <div className="video-container flex md:justify-center w-full pt-16 md:pt-24 z-10">

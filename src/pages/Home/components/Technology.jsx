@@ -8,10 +8,9 @@ import EclipseRobotimg from "../../../../public/assets/images/EclipseRobot.png"
 
 export default function Technology() {
   const carouselData = [
-    "Operators control the Eclipse Series robots using an augmented reality interface, providing an immersive, real-time experience. This level of control allows for unparalleled precision, making it ideal for high-stakes missions where every action counts.",
-    "The Eclipse Remote Systems advance Social Hardware's mission to improve safety and efficiency in hazardous environments. These teleoperated robots are engineered for high-risk tasks and industrial operations, reducing human exposure to danger.",
-    "Our systems are easy to use, even for non-technical operators. The intuitive interface and advanced sensory capabilities extend beyond human perception, making it accessible and efficient with minimal training.",
-    "Eclipse integrates IoT and AI-enhanced data collection, offering unmatched insights for smarter decision-making. Fully customizable, it coordinates multiple units, ideal for large-scale operations and seamless team collaboration."
+    "Eclipse Remote Systems are teleoperated robots designed to handle tasks in dangerous environments. Equipped with sensors and cameras that provide real-time situational awareness, these robots allow workers to remotely perform inspections, repairs, and other critical tasks from a safe distance.",
+    "Our telerobotics systems are designed for ease of use, even by non-technical users. With advanced sensory capabilities that surpass human limits, they leverage IoT and AI-enhanced data collection to deliver unparalleled operational insights, empowering smarter, more informed decisions for improved efficiency.",
+    "Our fully customizable systems adapt to your industry's specific needs, with multiple units deployable for seamless coordination in large-scale operations. Designed with top-tier safety and privacy compliance, you can trust our solutions to deliver secure, high-performance results every time",
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -38,13 +37,13 @@ export default function Technology() {
   return (
     <section
       id="technology"
-      className="relative py-8 flex md:items-center flex-col md:flex-row w-full"
+      className="relative py-8 flex md:items-start flex-col md:flex-row w-full justify-between"
     >
       <TitleComponent
         title="Technology"
-        styles={"absolute left-[4vw] top-[2vh]"}
+        styles={"absolute"}
       />
-      <div className="carousel-container pt-10 md:pt-32 z-10 ml-[4%] w-[80%] md:w-[35%]">
+      <div className="carousel-container relative md:static pt-10 md:pt-32 z-10 ml-[4%] w-[80%] md:w-[35%]    h-80 md:h-auto">
         <div className="carousel">
           {carouselData.map((item, index) => (
             <p
@@ -57,7 +56,7 @@ export default function Technology() {
             </p>
           ))}
         </div>
-        <div className="arrow-block flex gap-4 px-[4%] w-fit py-8">
+        <div className="arrow-block absolute self-start bottom-[4%] flex gap-4  w-fit py-8">
           <button
             onClick={prevSlide}
             className="hover:opacity-75 transition-opacity"
@@ -96,7 +95,7 @@ export default function Technology() {
           </button>
         </div>
       </div>
-      <img src={EclipseRobotimg} alt="Eclipse Robot" className="block md:absolute right-[18%] w-[84%] md:w-[35%] self-start top-0 z-10" />
+      <img src={EclipseRobotimg} alt="Eclipse Robot" className="block w-[84%] md:mr-[18%] md:w-[35%] self-start z-10" />
       {/* <div className="threeD-container block md:absolute left-[39%] w-11/12 md:w-[45%] self-start h-[50vh] top-0 z-10">
         <Canvas style={{ background: "transparent" }}>
           <EclipseRobot

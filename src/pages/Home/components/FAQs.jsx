@@ -63,7 +63,7 @@ export default function FAQs() {
       <div className="left-container">
         <TitleComponent
           title="F.A.Q's"
-          styles={"absolute left-[4vw] top-[2vh]"}
+          styles={"absolute"}
         />
       </div>
       <div className="center-container">

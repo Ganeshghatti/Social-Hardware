@@ -6,7 +6,15 @@
 
 // Mixin for responsive font sizing using clamp()
 @mixin responsive-font($min-size, $max-size) {
-  font-size: clamp(#{$min-size}, calc(#{$min-size} + (#{strip-unit($max-size)} - #{strip-unit($min-size)}) * ((100vw - 320px) / (1200 - 320))), #{$max-size});
+  font-size: clamp(
+    #{$min-size},
+    calc(
+      #{$min-size} + (#{strip-unit($max-size)} - #{strip-unit($min-size)}) * ((
+              100vw - 320px
+            ) / (1200 - 320))
+    ),
+    #{$max-size}
+  );
 }
 
 @function strip-unit($value) {
@@ -33,7 +41,7 @@ body {
       line-height: 110%;
     }
     .desc {
-      color: #e7a349;
+      color: #d4d4d4;
       font-family: "Space Grotesk", sans-serif;
       @include responsive-font(11px, 18px);
       font-style: normal;
@@ -42,7 +50,8 @@ body {
     }
   }
   .ph-desc {
-    color: #e7a349;
+    // color: #e7a349;
+    color: #d4d4d4;
     font-family: "Space Grotesk", sans-serif;
     @include responsive-font(11px, 18px);
     font-style: normal;
@@ -142,6 +151,51 @@ body {
         line-height: 108.18%; /* 15.145px */
       }
     }
+  }
+}
+#features1 {
+  .cards-container {
+    border-bottom: 1px solid #353539;
+    width: 100%;
+  }
+  .card {
+    .card-left {
+      .index {
+        color: var(--Schemes-On-Primary, #fff);
+        font-family: VioletSans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        --s: 5px; /* the size on the corner */
+        --t: 1px; /* the thickness of the border */
+        --g: 5px; /* the gap between the border and image */
+
+        padding: calc(var(--g) + var(--t));
+        outline: var(--t) solid #fc8500; /* the color here */
+        outline-offset: calc(-1 * var(--t));
+        mask: conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0 /
+            calc(100% - var(--s)) calc(100% - var(--s)),
+          linear-gradient(#000 0 0) content-box;
+      }
+      .title {
+        color: #d6d6d6;
+        font-family: VioletSans;
+        @include responsive-font(16px, 28px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 28.8px */
+      }
+      .description {
+        color: var(--Schemes-On-Primary, #fff);
+        font-family: "Space Grotesk";
+        @include responsive-font(11px, 18px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 108.18%; /* 15.145px */
+      }
+    }
     .card-right {
       .param,
       .get-a-trial {
@@ -185,7 +239,7 @@ body {
       line-height: 120%; /* 33.6px */
       padding: 50px 0; // Added left padding
       @media (max-width: 768px) {
-        padding: 50px 0 10px 0;
+        padding: 75px 0 15px 0;
       }
     }
     table {
@@ -198,7 +252,7 @@ body {
       .table-title {
         color: var(--Schemes-On-Primary, #fff);
         font-family: "Space Grotesk", sans-serif;
-        @include responsive-font(16px, 28px);
+        @include responsive-font(12px, 24px);
         font-style: normal;
         font-weight: 400;
         line-height: 120%; /* 28.8px */
