@@ -43,7 +43,7 @@ export default function Technology() {
         title="Technology"
         styles={"absolute"}
       />
-      <div className="carousel-container relative md:static pt-10 md:pt-32 z-10 ml-[4%] w-[80%] md:w-[35%]    h-80 md:h-auto">
+      <div className="carousel-container relative md:static pt-10 md:pt-0 md:mt-32 z-10 ml-[4%] w-[80%] md:w-[40%] h-80 md:h-auto">
         <div className="carousel">
           {carouselData.map((item, index) => (
             <p
@@ -95,7 +95,7 @@ export default function Technology() {
           </button>
         </div>
       </div>
-      <img src={EclipseRobotimg} alt="Eclipse Robot" className="block w-[84%] md:mr-[18%] md:w-[35%] self-start z-10" />
+      <img src={EclipseRobotimg} alt="Eclipse Robot" className="block w-[84%] md:mr-[18%] md:w-[35%] self-start z-10 md:my-8" />
       {/* <div className="threeD-container block md:absolute left-[39%] w-11/12 md:w-[45%] self-start h-[50vh] top-0 z-10">
         <Canvas style={{ background: "transparent" }}>
           <EclipseRobot
