@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="flex w-full flex-col-reverse md:flex-row-reverse relative md:justify-between pt-8 md:py-0 gap-6 md:gap-0 md:h-[95vh]"
+      className="flex w-full flex-col-reverse md:flex-row-reverse relative md:justify-between pt-8 md:py-0 gap-6 md:gap-0 md:h-[92.5vh]"
     >
       <div className="w-[95%] md:w-[46%] mr-[4%] z-10 flex items-end">
         <img

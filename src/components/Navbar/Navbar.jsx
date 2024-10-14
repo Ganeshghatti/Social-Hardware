@@ -23,7 +23,7 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Technology", id: "technology" },
-    // { name: "Tech Demo", id: "video" },
+    { name: "Tech Demo", id: "video" },
     { name: "Features", id: "features" },
     { name: "FAQ", id: "faq" },
     { name: "Partnerships", id: "partnerships" },
