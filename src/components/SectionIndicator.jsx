@@ -4,7 +4,7 @@ const sections = [
   { id: "technology", name: "TECHNOLOGY" },
   { id: "video", name: "DEMO" },
   { id: "features", name: "FEATURES" },
-  { id: "functionalities", name: "FUNCTIONALITIES" },
+  // { id: "functionalities", name: "FUNCTIONALITIES" },
   { id: "faq", name: "F.A.Q" },
   { id: "partnerships", name: "PARTNERSHIPS" },
   { id: "contact", name: "CONTACT" },

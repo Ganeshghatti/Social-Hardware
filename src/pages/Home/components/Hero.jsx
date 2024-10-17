@@ -12,7 +12,7 @@ export default function Hero() {
       id="hero"
       className="flex w-full flex-col-reverse md:flex-row-reverse relative md:justify-between pt-8 md:py-0 gap-6 md:gap-0 md:h-[92.5vh]"
     >
-      <div className="w-[95%] md:w-[46%] mr-[4%] z-10 flex items-end">
+      <div className="w-[95%] md:w-[50%] mr-[4%] z-10 flex items-end">
         <img
           src={heroimg}
           alt="hero"
@@ -22,15 +22,16 @@ export default function Hero() {
       <div className="w-full text-center md:text-left md:w-[55%] relative self-center md:left-[4%]  content flex flex-col gap-6 z-10 pt-24 md:pt-0">
         <h1 className="text-white title">
           <span className="text-orange"> Next-Generation </span>
-          <br/> Workplace Safety
+          <br /> Workplace Safety
         </h1>
         <p className="desc hidden md:block w-3/4">
           Social Hardware offers cutting-edge telerobotic solutions for
           high-risk operations, allowing critical tasks to be completed
           remotely, significantly improving both safety and productivity.
-          Contact us today to discover how we can help your business &nbsp;
+          <br /> <br />
           <span className="text-orange">
-            save lives and achieve higher performance.
+            Contact us today to discover how we can help your business save
+            lives and achieve higher performance.
           </span>
         </p>
         <button
@@ -110,10 +111,11 @@ export default function Hero() {
       <p className="ph-desc md:hidden absolute bottom-[2%] left-0 w-[95%] z-10 pl-[4%]">
         Social Hardware offers cutting-edge telerobotic solutions for high-risk
         operations, allowing critical tasks to be completed remotely,
-        significantly improving both safety and productivity. Contact us today
-        to discover how we can help your business &nbsp;
+        significantly improving both safety and productivity.
+        <br />
         <span className="text-orange">
-          save lives and achieve higher performance.
+          Contact us today to discover how we can help your business save lives
+          and achieve higher performance.
         </span>
       </p>
 
